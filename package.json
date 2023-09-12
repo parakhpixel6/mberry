@@ -1,5 +1,5 @@
 {
-  "name": "mberry-new",
+  "name": "mberry_new",
   "version": "1.0.0",
   "description": "Mberry redevelopement",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "Pixel6",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.66.1",
     "scss": "^0.2.4"
   }
 }
