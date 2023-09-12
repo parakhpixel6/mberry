@@ -1,0 +1,406 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  text-transform: none;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-d-col {
+  flex-direction: column;
+}
+
+.flex-d-row {
+  flex-direction: row;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-flex-end {
+  align-items: flex-end;
+}
+
+.align-flex-start {
+  align-items: flex-start;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.line-height {
+  line-height: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.g-2 {
+  gap: 2px;
+}
+
+.g-4 {
+  gap: 4px;
+}
+
+.g-8 {
+  gap: 8px;
+}
+
+.g-12 {
+  gap: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+}
+main header {
+  padding: 0px 16px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  border-top: 3px solid #C8A98D;
+  z-index: 9;
+}
+main header .header-wrapper {
+  width: 1024px;
+  margin: 0px auto;
+  padding-top: 54px;
+}
+main header .header-wrapper .mberry-logo-wrapper {
+  width: 300px;
+}
+main header .header-wrapper .mberry-logo-wrapper .mberry-logo {
+  width: 145px;
+  object-fit: cover;
+  object-position: center;
+}
+main header .header-wrapper .mberry-logo-wrapper a {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  color: #C8A98D;
+}
+main header .header-wrapper .mberry-logo-wrapper a::before {
+  content: " ";
+  height: 22px;
+  width: 2px;
+  background-color: #C8A98D;
+}
+main header .header-wrapper .menu ul li {
+  width: 110px;
+  padding: 8px 10px;
+  font-family: Oswald;
+  height: 32px;
+  cursor: pointer;
+}
+main header .header-wrapper .menu ul li h1 {
+  height: 100%;
+}
+main header .header-wrapper .menu ul li h1 > a {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e13324;
+}
+main header .header-wrapper .menu ul li h1 > span {
+  color: #C8A98D;
+}
+main header .header-wrapper .menu ul li:hover h1 > span {
+  color: #fff;
+}
+main header .header-wrapper .menu ul li:hover {
+  background-color: #e13324;
+}
+main header .header-wrapper .menu ul li:hover h1 > a {
+  color: #fff;
+}
+main header .header-wrapper .menu ul .list {
+  color: #e13324;
+}
+main header .header-wrapper .menu ul .list .sub_list {
+  display: none;
+  padding: 8px 10px;
+  width: 100%;
+  background-color: #e13324;
+}
+main header .header-wrapper .menu ul .list .sub_list li {
+  border-top: 1px solid rgba(177, 30, 17, 0.8078431373);
+  color: #fff;
+  text-align: left;
+  width: 100%;
+  padding: 16px 0px;
+}
+main header .header-wrapper .menu ul .list .sub_list li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+main header .header-wrapper .menu ul .list .sub_list li a:hover {
+  text-decoration: underline #e6e6e6;
+}
+main header .header-wrapper .menu ul .list:hover {
+  color: #fff;
+  background-color: #e13324;
+  padding: 8px 0px;
+}
+main header .header-wrapper .menu ul .list:hover .sub_list {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+main header .header-wrapper .menu ul .active {
+  background-color: #e13324;
+  margin: 0px 6px;
+}
+main header .header-wrapper .menu ul .active h1 > a {
+  color: #fff;
+  font-weight: 400;
+}
+main header .header-wrapper .menu ul .active h1 > span {
+  color: #fff;
+  font-weight: 400;
+}
+main header .header-wrapper .menu .hamburger {
+  padding: 8px 10px;
+  color: #a9927e;
+  cursor: pointer;
+}
+main header .header-wrapper .menu .hamburger span {
+  font-size: 28px;
+}
+main header .header-wrapper .menu .cart {
+  padding: 8px 10px;
+  font-family: Oswald;
+  cursor: pointer;
+}
+main header .header-wrapper .menu .cart h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #72d172;
+}
+main header .header-wrapper .menu .cart:hover {
+  background: #fff;
+}
+main header .header-wrapper .menu .cart:hover h1 {
+  font-weight: 400;
+  color: #e13324;
+}
+main header .header-wrapper .menu .cart > span {
+  font-size: 24px;
+}
+main .section-container {
+  height: 52vh;
+  width: 100vw;
+  background-color: #FCEDDF;
+  border-bottom: 0.2px solid #f2d3b6;
+  padding-top: 35px;
+}
+main .section-container .carousel {
+  padding: 24px;
+  height: 420px;
+  width: 960px;
+  margin: 0px auto;
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  position: relative;
+  top: 24%;
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px 0px #ececec;
+}
+main .section-container .carousel .navigation {
+  width: 1024px;
+  height: 116px;
+  position: relative;
+  top: -55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px auto;
+}
+main .section-container .carousel .navigation .swiper-button-next {
+  width: 40px;
+  height: 100%;
+  right: -6px;
+}
+main .section-container .carousel .navigation .swiper-button-next::after {
+  display: none;
+}
+main .section-container .carousel .navigation .swiper-button-next span {
+  color: #fff;
+  padding: 18px;
+  background: rgb(225, 51, 36);
+  background: linear-gradient(142deg, rgb(225, 51, 36) 76%, rgb(203, 0, 0) 100%);
+  left: -12px;
+  font-size: 16px;
+  position: absolute;
+}
+main .section-container .carousel .navigation .swiper-button-next .clip-next {
+  clip-path: polygon(18% 0%, 57% 0%, 18% 42%);
+  top: 83px;
+  transform: scaleX(-1);
+  left: -28px;
+  background: maroon;
+}
+main .section-container .carousel .navigation .swiper-button-prev {
+  width: 40px;
+  height: 100%;
+  left: -6px;
+  right: 0;
+}
+main .section-container .carousel .navigation .swiper-button-prev::after {
+  display: none;
+}
+main .section-container .carousel .navigation .swiper-button-prev span {
+  color: #fff;
+  padding: 18px;
+  background: rgb(225, 51, 36);
+  background: linear-gradient(142deg, rgb(225, 51, 36) 76%, rgb(203, 0, 0) 100%);
+  right: -12px;
+  font-size: 16px;
+  position: absolute;
+  transform-origin: center;
+  transform: scaleX(-1);
+}
+main .section-container .carousel .navigation .swiper-button-prev .clip-prev {
+  clip-path: polygon(18% 0%, 57% 0%, 18% 42%);
+  top: 83px;
+  transform: scaleX(1);
+  left: 32px;
+  background: maroon;
+}
+main .section-container .carousel .mySwiper {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+}
+
+@media (max-width: 1100px) {
+  .d-md-none {
+    display: none;
+  }
+  header .header-wrapper {
+    width: 100% !important;
+    padding: 32px !important;
+  }
+  .section-container {
+    padding: 24px !important;
+  }
+  .section-container .carousel {
+    width: 80vw !important;
+    margin: 0px auto !important;
+  }
+  .section-container .carousel .navigation {
+    width: 86vw !important;
+    padding: 24px !important;
+    margin: 0px auto !important;
+  }
+  .section-container .carousel .navigation .swiper-button-next > span, .section-container .carousel .navigation .swiper-button-prev > span {
+    padding: 12px !important;
+  }
+}
+@media (max-width: 769px) {
+  .d-md-none {
+    display: none;
+  }
+  header .header-wrapper {
+    width: 100% !important;
+    padding: 16px 0px !important;
+  }
+  .logo-md {
+    flex-direction: column;
+    gap: 0px;
+    width: 150px !important;
+    align-items: flex-start;
+  }
+  .logo-md .mberry-logo {
+    width: 92px !important;
+  }
+  .logo-md a {
+    font-size: 12px !important;
+  }
+  .logo-md a::before {
+    display: none;
+  }
+  .section-container .carousel .navigation .swiper-button-next {
+    right: -24px !important;
+  }
+  .section-container .carousel .navigation .swiper-button-prev {
+    left: -24px !important;
+  }
+}
+@media (min-width: 1101px) {
+  .d-lg-none {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

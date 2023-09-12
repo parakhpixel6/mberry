@@ -1,0 +1,14 @@
+{
+  "name": "mberry-new",
+  "version": "1.0.0",
+  "description": "Mberry redevelopement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pixel6",
+  "license": "ISC",
+  "devDependencies": {
+    "scss": "^0.2.4"
+  }
+}

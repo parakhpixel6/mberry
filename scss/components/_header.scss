@@ -1,0 +1,168 @@
+& header {
+    padding: 0px 16px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border-top: 3px solid #C8A98D;
+    z-index: 9;
+
+    & .header-wrapper {
+        width: 1024px;
+        margin: 0px auto;
+        padding-top: 54px;
+
+        & .mberry-logo-wrapper {
+            width: 300px;
+
+            & .mberry-logo {
+                width: 145px;
+                object-fit: cover;
+                object-position: center;
+    
+            }
+
+            & a {
+                font-family: Open Sans; 
+                font-size: 16px;
+                font-weight: 400;
+                color: #C8A98D;
+            }
+
+            & a::before{
+                content: " ";
+                height: 22px;
+                width: 2px;
+                background-color: #C8A98D;
+            }
+
+        }
+
+        & .menu ul li {
+            width: 110px;
+            padding: 8px 10px;
+            font-family: Oswald;
+            height: 32px;
+            cursor: pointer;
+
+            & h1 {
+                height: 100%;
+            }
+
+            & h1>a {
+                height: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                color: #e13324;  
+            }
+
+            & h1>span{
+                color: #C8A98D;
+            }
+
+            &:hover h1>span{
+                color: #fff;
+            }
+
+            &:hover {
+                background-color: #e13324;
+            }
+
+            &:hover h1>a{
+                color: #fff;
+            }
+        }
+
+        & .menu ul .list {
+            color: #e13324;
+
+            & .sub_list {
+                display: none;
+                padding: 8px 10px;
+                width: 100%;
+                background-color: #e13324;
+
+                & li {
+                    border-top: 1px solid #b11e11ce ;
+                    color: #fff;
+                    text-align: left;
+                    width: 100%;
+                    padding: 16px 0px;
+
+                    & a{
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 300;
+
+                        &:hover {
+                            text-decoration: underline #e6e6e6;
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: #e13324;
+                padding: 8px 0px;
+            }
+
+            &:hover .sub_list {
+                display: block;
+                transition: 0.3s ease-in-out;
+            }
+
+        }
+
+        & .menu ul .active {
+            background-color: #e13324;
+            margin: 0px 6px;
+
+            & h1>a {
+                color: #fff;
+                font-weight: 400;
+            }
+
+            & h1>span {
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+
+        & .menu .hamburger {
+            padding: 8px 10px;
+            color: #a9927e;
+            cursor: pointer;
+
+            & span {
+                font-size: 28px;
+            }
+                
+        }
+
+        & .menu .cart{
+            padding: 8px 10px;
+            font-family: Oswald;
+            cursor: pointer;
+
+            & h1 {
+                font-size: 16px;
+                font-weight: 400;
+                color: #72d172;
+                // color: #e13324;
+            }
+
+            &:hover {
+               background: #fff;
+            }
+
+            &:hover h1{
+                font-weight: 400;
+               color: #e13324;
+            }
+            
+            &>span {
+                font-size: 24px;
+            }
+        }
+    }
+}
