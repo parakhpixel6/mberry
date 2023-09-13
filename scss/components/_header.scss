@@ -61,6 +61,8 @@
 
             &:hover h1>span{
                 color: #fff;
+                transform: rotate(-180deg);
+                transition: transform 0.5s ease-in-out;
             }
 
             &:hover {
@@ -125,6 +127,8 @@
             & h1>span {
                 color: #fff;
                 font-weight: 400;
+                transform: rotate(180deg);
+                transition: transform ease-in-out;
             }
         }
 
