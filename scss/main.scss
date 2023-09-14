@@ -299,18 +299,147 @@ main {
                             padding: 16px;
                             width: 280px;
                             height: 100%;
-                            background-color: #f2d3b6;
+                            // background-color: #f2d3b6;
 
                             & .product-rate {
-                                height: 60%;
+                                position: relative;
+                                height: 80%;
                                 width: 100%;
-                                background-color: #EC3726;
+                                // background-color: #EC3726;
+
+                                & .layer-1 {
+                                    position: absolute;
+                                    height: 86%;
+                                    max-width: 100%;
+
+                                    & img {
+                                        height: 100%;
+                                        z-index: 1;
+                                    }
+                                }
+
+                                & .layer-2 {
+                                    position: absolute;
+                                    left: 20%;
+                                    top: 20%;
+                                    transform: translate(-50%, -50%);
+                                    height: 64px;
+                                    width: 64px;
+                                    background-color: rgb(121,195,63);
+                                    border-radius: 50%;
+                                    z-index: 3;
+                                    font-family: Poiret One;
+                                    font-size: 26px;
+                                    font-style: normal;
+                                    color: #fff;
+                                    font-weight: 600;
+                                    line-height: 150%; /* 57px */
+                                    letter-spacing: 2px;
+
+                                    & span {
+                                        margin-top: 2px;
+                                    }
+
+                                }
+
+                                & .layer-3 {
+                                    position: absolute;
+                                    height: 95%;
+                                    max-width: 100%;
+                                    left: 64%;
+                                    top: 52%;
+                                    transform: translate(-50%, -50%);
+
+                                    & img {
+                                        height: 100%;
+                                        z-index: 2;
+                                    }
+                                }
                             }
 
                             & .img-shadow {
-                                height: 10px;
+                                filter: blur(5px);
+                                margin-left: 18px;
+                                height: 2%;
                                 width: 100%;
-                                background-color: red;
+                                border-radius: 50%;
+                                background: rgb(101,101,101);
+                                background: radial-gradient(circle, rgba(101,101,101,0.4766281512605042) 0%, rgba(255,255,255,1) 100%);
+                            }
+                        }
+
+                        & .product-content {
+                            & .product-img {
+                                padding: 16px;
+                                width: 280px;
+                                height: 100%;
+                                // background-color: #f2d3b6;
+    
+                                & .product-rate {
+                                    position: relative;
+                                    height: 80%;
+                                    width: 100%;
+                                    // background-color: #EC3726;
+    
+                                    & .layer-1 {
+                                        position: absolute;
+                                        height: 86%;
+                                        max-width: 100%;
+    
+                                        & img {
+                                            height: 100%;
+                                            z-index: 1;
+                                        }
+                                    }
+    
+                                    & .layer-2 {
+                                        position: absolute;
+                                        left: 20%;
+                                        top: 20%;
+                                        transform: translate(-50%, -50%);
+                                        height: 64px;
+                                        width: 64px;
+                                        background-color: rgb(121,195,63);
+                                        border-radius: 50%;
+                                        z-index: 3;
+                                        font-family: Poiret One;
+                                        font-size: 26px;
+                                        font-style: normal;
+                                        color: #fff;
+                                        font-weight: 600;
+                                        line-height: 150%; /* 57px */
+                                        letter-spacing: 2px;
+    
+                                        & span {
+                                            margin-top: 2px;
+                                        }
+    
+                                    }
+    
+                                    & .layer-3 {
+                                        position: absolute;
+                                        height: 95%;
+                                        max-width: 100%;
+                                        left: 64%;
+                                        top: 52%;
+                                        transform: translate(-50%, -50%);
+    
+                                        & img {
+                                            height: 100%;
+                                            z-index: 2;
+                                        }
+                                    }
+                                }
+    
+                                & .img-shadow {
+                                    filter: blur(5px);
+                                    margin-left: 18px;
+                                    height: 2%;
+                                    width: 100%;
+                                    border-radius: 50%;
+                                    background: rgb(101,101,101);
+                                    background: radial-gradient(circle, rgba(101,101,101,0.4766281512605042) 0%, rgba(255,255,255,1) 100%);
+                                }
                             }
                         }
                     }
@@ -338,7 +467,6 @@ main {
         // padding: 24px !important;
 
         & .carousel{
-            height: fit-content !important;
             width: 80vw !important;
             margin: 0px auto !important;
             
@@ -353,14 +481,14 @@ main {
                 }
             }
 
-            & .swiper-slide {
-                flex-direction: column;
-                gap: 24px;
+            // & .swiper-slide {
+            //     flex-direction: column;
+            //     gap: 24px;
                 
-                & .product-detail {
-                    width: 100% !important;
-                }
-            }
+            //     & .product-detail {
+            //         width: 100% !important;
+            //     }
+            // }
         }
     }
 }
