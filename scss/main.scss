@@ -278,6 +278,7 @@ main {
                             }
 
                             button {
+                                cursor: pointer;
                                 width: 150px;
                                 text-transform: uppercase;
                                 font-family: Open Sans;
@@ -293,6 +294,23 @@ main {
                                 background: rgb(121,195,63);
                                 background: linear-gradient(180deg, rgba(121,195,63,1) 47%, rgba(88,151,37,1) 92%, rgba(81,139,35,1) 100%);
                             }
+
+                            & .info-overlay {
+                                cursor: pointer;
+                                width: fit-content;
+                                text-transform: lowercase;
+                                box-shadow: none;
+                                font-size: 1rem;
+                                background: none;
+                                border: none;
+                                color: #7CC144;
+                                font-family: Oswald;
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%; /* 33px */
+                                letter-spacing: 0.22px;
+                            }
                         }
 
                         & .product-img {
@@ -300,16 +318,16 @@ main {
                             width: 280px;
                             height: 100%;
                             // background-color: #f2d3b6;
+                            position: relative;
 
                             & .product-rate {
-                                position: relative;
                                 height: 80%;
                                 width: 100%;
                                 // background-color: #EC3726;
 
                                 & .layer-1 {
                                     position: absolute;
-                                    height: 86%;
+                                    height: 58%;
                                     max-width: 100%;
 
                                     & img {
@@ -320,8 +338,8 @@ main {
 
                                 & .layer-2 {
                                     position: absolute;
-                                    left: 20%;
-                                    top: 20%;
+                                    left: 30%;
+                                    top: 16%;
                                     transform: translate(-50%, -50%);
                                     height: 64px;
                                     width: 64px;
@@ -344,10 +362,10 @@ main {
 
                                 & .layer-3 {
                                     position: absolute;
-                                    height: 95%;
+                                    height: 65%;
                                     max-width: 100%;
-                                    left: 64%;
-                                    top: 52%;
+                                    left: 60%;
+                                    top: 42%;
                                     transform: translate(-50%, -50%);
 
                                     & img {
@@ -365,81 +383,6 @@ main {
                                 border-radius: 50%;
                                 background: rgb(101,101,101);
                                 background: radial-gradient(circle, rgba(101,101,101,0.4766281512605042) 0%, rgba(255,255,255,1) 100%);
-                            }
-                        }
-
-                        & .product-content {
-                            & .product-img {
-                                padding: 16px;
-                                width: 280px;
-                                height: 100%;
-                                // background-color: #f2d3b6;
-    
-                                & .product-rate {
-                                    position: relative;
-                                    height: 80%;
-                                    width: 100%;
-                                    // background-color: #EC3726;
-    
-                                    & .layer-1 {
-                                        position: absolute;
-                                        height: 86%;
-                                        max-width: 100%;
-    
-                                        & img {
-                                            height: 100%;
-                                            z-index: 1;
-                                        }
-                                    }
-    
-                                    & .layer-2 {
-                                        position: absolute;
-                                        left: 20%;
-                                        top: 20%;
-                                        transform: translate(-50%, -50%);
-                                        height: 64px;
-                                        width: 64px;
-                                        background-color: rgb(121,195,63);
-                                        border-radius: 50%;
-                                        z-index: 3;
-                                        font-family: Poiret One;
-                                        font-size: 26px;
-                                        font-style: normal;
-                                        color: #fff;
-                                        font-weight: 600;
-                                        line-height: 150%; /* 57px */
-                                        letter-spacing: 2px;
-    
-                                        & span {
-                                            margin-top: 2px;
-                                        }
-    
-                                    }
-    
-                                    & .layer-3 {
-                                        position: absolute;
-                                        height: 95%;
-                                        max-width: 100%;
-                                        left: 64%;
-                                        top: 52%;
-                                        transform: translate(-50%, -50%);
-    
-                                        & img {
-                                            height: 100%;
-                                            z-index: 2;
-                                        }
-                                    }
-                                }
-    
-                                & .img-shadow {
-                                    filter: blur(5px);
-                                    margin-left: 18px;
-                                    height: 2%;
-                                    width: 100%;
-                                    border-radius: 50%;
-                                    background: rgb(101,101,101);
-                                    background: radial-gradient(circle, rgba(101,101,101,0.4766281512605042) 0%, rgba(255,255,255,1) 100%);
-                                }
                             }
                         }
                     }
@@ -464,11 +407,17 @@ main {
     }
 
     .section-container {
-        // padding: 24px !important;
-
         & .carousel{
             width: 80vw !important;
             margin: 0px auto !important;
+
+            & .product-content {
+                // flex-direction: row;
+                & .product-img {
+                        width: 25vw !important;
+                        height: 30vh !important;
+                }
+            }
             
             & .navigation {
                 width: 86vw !important;
@@ -480,15 +429,6 @@ main {
 
                 }
             }
-
-            // & .swiper-slide {
-            //     flex-direction: column;
-            //     gap: 24px;
-                
-            //     & .product-detail {
-            //         width: 100% !important;
-            //     }
-            // }
         }
     }
 }
@@ -529,6 +469,26 @@ main {
 
         & .carousel{
             
+            h1 {
+                font-size: 1.5rem !important;
+            }
+
+           
+            & .product-content {
+                & .product-img {
+                    width: 100% !important;
+                    text-wrap: wrap;
+                    padding: 0px !important;
+                    // width: 25vw !important;
+                    height: 30vh !important;
+
+                    & p {
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+                        
+            
             & .navigation {
                 & .swiper-button-next{
                     right: -24px !important;
@@ -540,6 +500,67 @@ main {
         }
     }
 
+}
+
+@media (max-width: 530px) {
+    .d-sm-none {
+        display: none;
+    }
+
+    .d-sm {
+        display: block;
+    }
+
+    .section-container {
+        & .carousel{
+
+            & .product-content {
+                // flex-direction: row;
+                // align-items: center !important;
+                & .product-img {
+                    padding: 0px 32px 0px 0px !important;
+
+                    & .product-rate{
+                        height: 58% !important;
+
+                        .layer-2  {
+                            height: 54px !important;
+                            width: 54px !important;
+                            top: 7% !important;
+                            left: 10% !important;
+                            p {
+                                font-family: Poiret One !important;
+                                font-size: 1.5rem !important;
+                                font-style: normal !important;
+                                color: #fff !important;
+                            }
+                        }
+
+                        .layer-3  {
+                            height: 65% !important;
+                            left: 46% !important;
+                            top: 30% !important;
+                        }
+                    }
+                }
+            }
+
+            & .product-info {
+                margin-top: -96px !important;
+
+                & button {
+                    font-size: 0.9rem !important;
+                    width: fit-content !important;
+                    padding: 8px !important;
+                }
+
+                & .info-overlay {
+                    padding: 0px !important;
+                    gap: 4px !important;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1101px) {
