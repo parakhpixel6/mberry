@@ -389,6 +389,15 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
   font-weight: 400;
   line-height: 150%;
 }
+main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .product-detail .read-more {
+  cursor: pointer;
+  color: #EC3726;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .product-detail sup {
   font-size: 8px;
 }
@@ -503,8 +512,8 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
     margin: 0px auto !important;
   }
   .section-container .carousel .product-content .product-img {
-    width: 25vw !important;
-    height: 30vh !important;
+    width: 60vw !important;
+    height: fit-content !important;
   }
   .section-container .carousel .navigation {
     width: 86vw !important;
@@ -556,6 +565,18 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
   .section-container .carousel .navigation .swiper-button-prev {
     left: -24px !important;
   }
+  .section-container .carousel .product-info {
+    margin-top: -36px !important;
+  }
+  .section-container .carousel .product-info button {
+    font-size: 0.9rem !important;
+    width: fit-content !important;
+    padding: 8px !important;
+  }
+  .section-container .carousel .product-info .info-overlay {
+    padding: 0px !important;
+    gap: 4px !important;
+  }
 }
 @media (max-width: 530px) {
   .d-sm-none {
@@ -588,7 +609,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
     top: 30% !important;
   }
   .section-container .carousel .product-info {
-    margin-top: -96px !important;
+    margin-top: -28px !important;
   }
   .section-container .carousel .product-info button {
     font-size: 0.9rem !important;
