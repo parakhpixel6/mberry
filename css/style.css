@@ -585,6 +585,9 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
   .d-sm {
     display: block;
   }
+  .section-container .carousel .product-content {
+    gap: 0px !important;
+  }
   .section-container .carousel .product-content .product-img {
     padding: 0px 32px 0px 0px !important;
   }
@@ -609,7 +612,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
     top: 30% !important;
   }
   .section-container .carousel .product-info {
-    margin-top: -28px !important;
+    margin-top: -48px !important;
   }
   .section-container .carousel .product-info button {
     font-size: 0.9rem !important;
