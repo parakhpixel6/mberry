@@ -540,6 +540,7 @@ main {
         & .carousel{
 
             & .product-content {
+                gap: 0px !important;
                 // flex-direction: row;
                 // align-items: center !important;
                 & .product-img {
@@ -571,7 +572,7 @@ main {
             }
 
             & .product-info {
-                margin-top: -28px !important;
+                margin-top: -48px !important;
 
                 & button {
                     font-size: 0.9rem !important;
