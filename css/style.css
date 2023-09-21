@@ -550,6 +550,9 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
   .section-container .carousel h1 {
     font-size: 1.5rem !important;
   }
+  .section-container .carousel .product-content {
+    gap: 0px !important;
+  }
   .section-container .carousel .product-content .product-img {
     width: 100% !important;
     text-wrap: wrap;
@@ -612,7 +615,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
     top: 30% !important;
   }
   .section-container .carousel .product-info {
-    margin-top: -48px !important;
+    margin-top: -72px !important;
   }
   .section-container .carousel .product-info button {
     font-size: 0.9rem !important;
