@@ -576,6 +576,10 @@ main {
             & .product-info {
                 margin-top: -72px !important;
 
+                @media (max-height: 740px) {
+                    margin-top: -16px !important;
+                }
+
                 & button {
                     font-size: 0.9rem !important;
                     width: fit-content !important;
@@ -596,4 +600,3 @@ main {
         display: none;
     }
 }
-
