@@ -422,6 +422,7 @@ main {
             margin: 0px auto !important;
 
             & .product-content {
+                // gap: 0px !important;
                 // flex-direction: row;
                 & .product-img {
                         width: 60vw !important;
@@ -485,6 +486,7 @@ main {
 
            
             & .product-content {
+                gap: 0px !important;
                 & .product-img {
                     width: 100% !important;
                     text-wrap: wrap;
@@ -572,7 +574,7 @@ main {
             }
 
             & .product-info {
-                margin-top: -48px !important;
+                margin-top: -72px !important;
 
                 & button {
                     font-size: 0.9rem !important;
