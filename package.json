@@ -9,7 +9,7 @@
   "author": "Pixel6",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.66.1",
+    "sass": "^1.68.0",
     "scss": "^0.2.4"
   }
 }
