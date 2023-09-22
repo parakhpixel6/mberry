@@ -132,10 +132,22 @@ a {
 }
 
 main {
+    position: relative;
     min-height: 100vh;
     width: 100vw;
 
     @import  "./components/header";
+
+    nav {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: #FCEDDF;
+        z-index: 99;
+        left: 100%;
+
+        transition: left 0.5s ease-in-out;
+    }
 
     .section-container {
         height: 52vh;
@@ -232,6 +244,7 @@ main {
                 & .swiper-wrapper {
 
                     & .swiper-slide {
+                        position: relative;
                         display: flex;
                         height: 100%;
                         width: 100%;
@@ -395,208 +408,60 @@ main {
                                 background: radial-gradient(circle, rgba(101,101,101,0.4766281512605042) 0%, rgba(255,255,255,1) 100%);
                             }
                         }
-                    }
-                }
-            }
 
+                        & .nutri-overlay {
+                            opacity: 0;
+                            position: absolute;
+                            left: 45%;
+                            top: 41%;
+                            transform: translate(-50%, -50%);
+                            height: 80%;
+                            width: 45vw;
+                            border-radius: 12px;
+                            background-color: #fff;
+                            z-index: 99;
+                            box-shadow: 0px 0px 8px 2px #9d969670;
+                            transition: opacity 0.3s ease-in-out;
 
-        }
-    }
-}
+                            & .nutri-clip-path {
+                                position: absolute;
+                                top: 100%;
+                                left: 16%;
+                                transform: rotate(180deg);
+                                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                                background-color: #fff;
+                                height: 18px;
+                                width: 32px;
+                            }
 
-@media (max-width: 1100px) {
-    .d-md-none {
-        display: none;
-    }
+                            & .nutri-info {
+                                height: 90%;
+                                width: 98%;
+                                padding: 16px;
+                                // background-color: red;
 
-    header {
-        & .header-wrapper {
-            width: 100% !important;
-            padding: 32px !important;
-        }
-    }
+                                & .nutri-info-left {
 
-    .section-container {
-        & .carousel{
-            width: 80vw !important;
-            margin: 0px auto !important;
+                                    h1 {
+                                        font-size: 2.25rem;
+                                        font-family: Oswald;
+                                        letter-spacing: 1.6px;
+                                        font-weight: 500;
+                                        line-height: 40px;
+                                        color: #555;
+                                    }
+                                }
 
-            & .product-content {
-                // gap: 0px !important;
-                // flex-direction: row;
-                & .product-img {
-                        width: 60vw !important;
-                        height: fit-content !important;
-                }
-            }
-            
-            & .navigation {
-                width: 86vw !important;
-                padding: 24px !important;
-                margin: 0px auto !important;
-
-                & .swiper-button-next>span, .swiper-button-prev>span {
-                    padding: 12px !important;
-
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 769px) {
-    .d-md-none {
-        display: none;
-    }
-
-    header {
-        & .header-wrapper {
-            width: 100% !important;
-            padding: 16px 0px !important;
-        }
-    }
-
-    .logo-md {
-        flex-direction: column;
-        gap: 0px;
-        width: 150px !important;
-        align-items: flex-start;
-
-        & .mberry-logo {
-            width: 92px !important;
-
-        }
-        
-        & a {
-            font-size: 12px !important;
-        }
-
-        & a::before{
-            display: none;
-        } 
-    }
-
-    .section-container {
-
-        & .carousel{
-            
-            h1 {
-                font-size: 1.5rem !important;
-            }
-
-           
-            & .product-content {
-                gap: 0px !important;
-                & .product-img {
-                    width: 100% !important;
-                    text-wrap: wrap;
-                    padding: 0px !important;
-                    // width: 25vw !important;
-                    height: 30vh !important;
-
-                    & p {
-                        font-size: 0.95rem;
-                    }
-                }
-            }
-                        
-            
-            & .navigation {
-                & .swiper-button-next{
-                    right: -24px !important;
-                } 
-                & .swiper-button-prev {
-                    left: -24px !important;
-                }
-            }
-
-            & .product-info {
-                margin-top: -36px !important;
-
-                & button {
-                    font-size: 0.9rem !important;
-                    width: fit-content !important;
-                    padding: 8px !important;
-                }
-
-                & .info-overlay {
-                    padding: 0px !important;
-                    gap: 4px !important;
-                }
-            }
-        }
-    }
-
-}
-
-@media (max-width: 530px) {
-    .d-sm-none {
-        display: none;
-    }
-
-    .d-sm {
-        display: block;
-    }
-
-    .section-container {
-        & .carousel{
-
-            & .product-content {
-                gap: 0px !important;
-                // flex-direction: row;
-                // align-items: center !important;
-                & .product-img {
-                    padding: 0px 32px 0px 0px !important;
-
-                    & .product-rate{
-                        height: 58% !important;
-
-                        .layer-2  {
-                            height: 54px !important;
-                            width: 54px !important;
-                            top: 7% !important;
-                            left: 10% !important;
-                            p {
-                                font-family: Poiret One !important;
-                                font-size: 1.5rem !important;
-                                font-style: normal !important;
-                                color: #fff !important;
                             }
                         }
 
-                        .layer-3  {
-                            height: 65% !important;
-                            left: 46% !important;
-                            top: 30% !important;
-                        }
                     }
                 }
             }
 
-            & .product-info {
-                margin-top: -72px !important;
 
-                @media (max-height: 740px) {
-                    margin-top: -16px !important;
-                }
-
-                & button {
-                    font-size: 0.9rem !important;
-                    width: fit-content !important;
-                    padding: 8px !important;
-                }
-
-                & .info-overlay {
-                    padding: 0px !important;
-                    gap: 4px !important;
-                }
-            }
         }
     }
 }
 
-@media (min-width: 1101px) {
-    .d-lg-none {
-        display: none;
-    }
-}
+@import "./includes/mediaQuery";

@@ -13,6 +13,7 @@
 </head>
 <body>
     <main>
+		<!--HEADER START-->
         <header>
             <div class="header-wrapper d-flex justify-space-between align-center">
                 <div class="mberry-logo-wrapper logo-md d-flex justify-center align-center g-12">
@@ -23,7 +24,7 @@
                     </div>
                     <a class="d-flex justify-center align-center g-8" href="/">make life sweeter</a>
                 </div>
-                <div class="menu d-flex justify-space-around align-center">
+                <ul class="menu d-flex justify-space-around align-center">
                     <ul class="d-md-none d-flex justify-space-around align-center">
                         <li class="active d-flex justify-center align-center">
                             <h1 class="d-flex justify-start align-center">
@@ -98,13 +99,23 @@
                             BUY NOW
                         </h1>
                     </li>
-                </div>
+                </ul>
             </div>
         </header>
+		<!--HEADER END-->
+
+		<!--TOGGLE HEADER MOBILE & TAB VIEW START-->
+		<nav class="menu-mob d-lg-none d-flex justify-center align-center">
+
+		</nav>
+		<!--TOGGLE HEADER MOBILE & TAB VIEW END-->
+		<!--SECTION-1 (slider section) START-->
         <section class="section-container">
+			<!--SLIDER START-->
             <div class="carousel">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
+						<!--PRODUCT-1-->
                         <div class="swiper-slide d-flex justify-space-between align-center">
                             <div class="product-detail d-flex flex-d-col g-24 justify-flex-start">
                                 <div class="product-heading">
@@ -155,7 +166,19 @@
                                 </div>
                                 <div class="img-shadow"></div>
                             </div>
+							<!--On Hover Nutritional Info-->
+							<div class="d-md-none nutri-overlay d-flex justify-center align-center">
+								<div class="nutri-clip-path">
+								</div>
+								<div class="nutri-info">
+									<div class="nutri-info-left">
+										<h1>NUTRITION</h1>
+										<h1>FACTS</h1>
+									</div>
+								</div>
+							</div>
                         </div>
+						<!--PRODUCT-2-->
                         <div class="swiper-slide d-flex justify-space-between align-center">
 							<div class="product-detail d-flex flex-d-col g-24 justify-flex-start">
 								<div class="product-heading">
@@ -190,10 +213,6 @@
 										<button type="button d-flex justify-center align-center">
 											Buy Now
 										</button>
-										<button type="button" class="info-overlay d-flex justify-center align-center g-8">
-											<img src="./assets/Nutrition.svg" alt="nutri-info">
-											nutritional label
-										</button>
 									</div>
 								</div>
 							</div>
@@ -209,6 +228,7 @@
 								<div class="img-shadow"></div>
 							</div>
 						</div>
+						<!--PRODUCT-3-->
                         <div class="swiper-slide d-flex justify-space-between align-center">
 							<div class="product-detail d-flex flex-d-col g-24 justify-flex-start">
 								<div class="product-heading">
@@ -262,6 +282,7 @@
 								<div class="img-shadow"></div>
 							</div>
 						</div>
+						<!--PRODUCT-4-->
                         <div class="swiper-slide d-flex justify-space-between align-center">
 							<div class="product-detail d-flex flex-d-col g-24 justify-flex-start">
 								<div class="product-heading">
@@ -317,6 +338,9 @@
 						</div>
                     </div>
                 </div>
+				<!--SLIDER END-->
+
+				<!--SLIDER NAVIGATION START-->
                 <div class="navigation">
                     <div class="swiper-button-prev">
                         <span class="d-flex justify-center align-center material-symbols-rounded">arrow_forward_ios</span>
@@ -327,8 +351,10 @@
                         <span class="d-md-none clip-next"></span>
                     </div>
                 </div>
+				<!--SLIDER NAVIGATION END-->
             </div>
         </section>
+		<!--SECTION-1 (slider section) END-->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
