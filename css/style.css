@@ -129,6 +129,7 @@ a {
 }
 
 main {
+  position: relative;
   min-height: 100vh;
   width: 100vw;
 }
@@ -272,6 +273,15 @@ main header .header-wrapper .menu .cart:hover h1 {
 main header .header-wrapper .menu .cart > span {
   font-size: 24px;
 }
+main nav {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #FCEDDF;
+  z-index: 99;
+  left: 100%;
+  transition: left 0.5s ease-in-out;
+}
 main .section-container {
   height: 52vh;
   width: 100vw;
@@ -357,6 +367,7 @@ main .section-container .carousel .mySwiper {
   margin: 0px auto;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide {
+  position: relative;
   display: flex;
   height: 100%;
   width: 100%;
@@ -498,6 +509,43 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
   background: rgb(101, 101, 101);
   background: radial-gradient(circle, rgba(101, 101, 101, 0.4766281513) 0%, rgb(255, 255, 255) 100%);
 }
+main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay {
+  opacity: 0;
+  position: absolute;
+  left: 45%;
+  top: 41%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 45vw;
+  border-radius: 12px;
+  background-color: #fff;
+  z-index: 99;
+  box-shadow: 0px 0px 8px 2px rgba(157, 150, 150, 0.4392156863);
+  transition: opacity 0.3s ease-in-out;
+}
+main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-clip-path {
+  position: absolute;
+  top: 100%;
+  left: 16%;
+  transform: rotate(180deg);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #fff;
+  height: 18px;
+  width: 32px;
+}
+main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info {
+  height: 90%;
+  width: 98%;
+  padding: 16px;
+}
+main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-left h1 {
+  font-size: 2.25rem;
+  font-family: Oswald;
+  letter-spacing: 1.6px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #555;
+}
 
 @media (max-width: 1100px) {
   .d-md-none {
@@ -520,7 +568,8 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
     padding: 24px !important;
     margin: 0px auto !important;
   }
-  .section-container .carousel .navigation .swiper-button-next > span, .section-container .carousel .navigation .swiper-button-prev > span {
+  .section-container .carousel .navigation .swiper-button-next > span,
+  .section-container .carousel .navigation .swiper-button-prev > span {
     padding: 12px !important;
   }
 }
