@@ -986,8 +986,8 @@ main footer .footer-gradient .footer-leaf {
     gap: 4px !important;
   }
   footer .footer-links {
-    width: 100vw !important;
-    flex-direction: column;
+    width: 80vw !important;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding-left: 12% !important;
     gap: 12px !important;
