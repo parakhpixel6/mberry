@@ -193,6 +193,13 @@
             }
         }
     }
+
+    .section-highlight {
+
+        & .highlights {
+            margin-top: 12vh !important;
+        }
+    }
 }
 
 @media (min-width: 1101px) {

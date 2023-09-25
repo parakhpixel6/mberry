@@ -14,7 +14,8 @@ body {
     width: 100vw;
     box-sizing: border-box;
     text-transform: none;
-    overflow: hidden;
+    // overflow: hidden;
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     // -moz-osx-font-smoothing: grayscale;
 }
@@ -119,8 +120,20 @@ a {
     gap: 12px;
 }
 
+.g-16 {
+    gap: 16px;
+}
+
+.g-20 {
+    gap: 20px;
+}
+
 .g-24 {
     gap: 24px;
+}
+
+.g-48 {
+    gap: 48px;
 }
 
 li {
@@ -139,14 +152,104 @@ main {
     @import  "./components/header";
 
     nav {
-        position: absolute;
+
+        position: fixed;
         height: 100vh;
         width: 100vw;
-        background-color: #FCEDDF;
+        background-color: #92919173;
         z-index: 99;
         left: 100%;
-
         transition: left 0.5s ease-in-out;
+        
+        & .nav-wrapper{
+            position: relative;
+            width: 70vw;
+            background-color: #FCEDDF;
+            height: 100%;
+            padding-top: 24px;
+
+            & .close {
+                position: fixed;
+                width: 70vw;
+                background-color: #FCEDDF;
+
+                & span {
+                    font-size: 62px;
+                    font-weight: 300;
+                    color: #C8A98D;
+                }
+            }
+
+            & ul {
+                text-align: center;
+                font-family: Oswald;
+                font-size: 14px;
+                padding-top: 94px;
+
+
+                & li {
+                    text-align: left;
+                    width: 150px;
+                    display: block;
+                    margin-bottom: 24px;
+                }
+
+                & li>ul {
+                    padding: 0px;
+                    display: none;
+                    transition: display 0.3s ease-in-out;
+
+                    &>li {
+                        text-align: left;
+                        padding: 4px 8px  !important;
+                        margin-bottom: 4px;
+                        font-size: 16px;
+
+                        & a {
+                            text-decoration: none;
+                            color: #111;
+                        }
+                    }
+                }
+
+                & li:hover h1 {
+                    background-color: #EC3726;
+                    color: #fff;
+
+                    & span {
+                        color: #fff;
+                    }
+                }
+
+                & li:hover>ul {
+                    display: block;
+                    transition: display 0.3s ease-in-out;
+                }
+
+                & li span {
+                    color: #C8A98D;
+                    font-size: 36px;
+                    height: 31px;
+                    transform: rotate(0deg);
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                & li:hover span {
+                    transform: rotate(-180deg);
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                & li h1 {
+                    font-weight: 400;
+                    padding-left: 8px;
+                }
+
+                & .active {
+                    background-color: #EC3726;
+                    color: #fff;
+                }
+            }
+        }
     }
 
     .section-container {
@@ -412,12 +515,12 @@ main {
                         & .nutri-overlay {
                             opacity: 0;
                             position: absolute;
-                            left: 45%;
+                            left: 50%;
                             top: 41%;
                             transform: translate(-50%, -50%);
                             height: 80%;
-                            width: 45vw;
-                            border-radius: 12px;
+                            width: fit-content;
+                            border-radius: 8px;
                             background-color: #fff;
                             z-index: 99;
                             box-shadow: 0px 0px 8px 2px #9d969670;
@@ -441,26 +544,108 @@ main {
                                 // background-color: red;
 
                                 & .nutri-info-left {
+                                    width: 20vw;
+
+                                    h1, h2, h3 {
+                                        font-family: Roboto;
+                                        color: #555;
+                                    }
 
                                     h1 {
                                         font-size: 2.25rem;
-                                        font-family: Oswald;
-                                        letter-spacing: 1.6px;
-                                        font-weight: 500;
                                         line-height: 40px;
+                                        font-weight: 600;
+                                    }
+                                    h2 {
+                                        font-size: 1.27rem;
+                                        font-weight: 500;
+                                    }
+                                    h3 {
+                                        font-size: 1rem;
+                                        font-weight: 400;
+                                    }
+                                }
+
+                                & .nutri-info-right {
+                                    height: 100%;
+
+                                    table {
+                                        // width: 100%;
+                                        padding: 0px 16px;
+                                        width: 25vw;
                                         color: #555;
+                                    }
+
+                                    th {
+                                        font-size: 1.25rem;
+                                    }
+
+                                    tr {
+                                        padding: 4px 0px;
+                                        font-family:  Roboto;
+                                        border-bottom: 2px solid #ddd;
+
+                                        & td {
+                                            font-size: 1.5rem;
+                                        }
+
+                                        & span {
+                                            font-weight: 600;
+                                        }
+
+                                        &:first-child {
+                                            padding: 4px 0px 0px 0px;
+                                            border-bottom:  4px solid #ddd
+                                        }
+
+                                        &:last-child {
+                                            border-bottom:  4px solid #ddd
+                                        }
+                                    }
+
+
+                                    p {
+                                        padding: 4px 16px;
+                                        width: 25vw;
+                                        font-family: Roboto;
+                                        font-size: 1.1rem
                                     }
                                 }
 
                             }
                         }
-
                     }
                 }
             }
-
-
         }
+    }
+
+    .section-highlight {
+        padding-top: 20vh;
+        height: fit-content;
+        width: 100vw;
+        background-color: #FFF8F1;
+
+        & .highlights {
+            margin: 6vh  auto 0 auto;
+            padding: 24px;
+            height: 24vh;
+            flex-wrap: wrap;
+            width: fit-content;
+
+            & img {
+                width: 216px;
+                height: 52px;
+            }
+        }
+    }
+
+    footer {
+        padding: 24px 0px;
+        height: fit-content;
+        background-image: url('../assets/bg.jpg');
+        background-position: center;
+        background-size: cover;
     }
 }
 
