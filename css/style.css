@@ -231,6 +231,7 @@ main header .header-wrapper .menu ul .list .sub_list li a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
+  color: #fff;
 }
 main header .header-wrapper .menu ul .list .sub_list li a:hover {
   text-decoration: underline #e6e6e6;
