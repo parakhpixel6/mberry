@@ -747,6 +747,11 @@ main footer .footer-wrapper .footer-promo p a {
   color: #7CC144;
   text-decoration: none;
 }
+main footer .footer-wrapper .footer-promo .social {
+  padding: 8px;
+  width: 100%;
+  height: 64%;
+}
 main footer .footer-wrapper .footer-promo form {
   height: 60%;
   width: 100%;
