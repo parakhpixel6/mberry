@@ -147,7 +147,7 @@ a {
 main {
   position: relative;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 main header {
   padding: 0px 16px;
@@ -294,7 +294,7 @@ main header .header-wrapper .menu .cart > span {
 main nav {
   position: fixed;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(146, 145, 145, 0.4509803922);
   z-index: 99;
   left: 100%;
@@ -376,7 +376,7 @@ main nav .nav-wrapper ul .active {
 }
 main .section-container {
   height: 52vh;
-  width: 100vw;
+  width: 100%;
   background-color: #FCEDDF;
   border-bottom: 0.2px solid #f2d3b6;
   padding-top: 35px;
@@ -689,7 +689,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
 main .section-highlight {
   padding-top: 8vh;
   height: fit-content;
-  width: 100vw;
+  width: 100%;
   background-color: #FFF8F1;
 }
 main .section-highlight .highlights {
@@ -759,7 +759,7 @@ main .section-highlight .highlights .hoffpost, main .section-highlight .highligh
   cursor: default;
 }
 main footer {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   height: 50vh;
   background-image: url("../assets/bg.jpg");

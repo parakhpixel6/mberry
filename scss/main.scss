@@ -151,7 +151,7 @@ a {
 main {
     position: relative;
     min-height: 100vh;
-    width: 100vw;
+    width: 100%;
 
     @import  "./components/header";
 
@@ -159,7 +159,7 @@ main {
 
         position: fixed;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         background-color: #92919173;
         z-index: 99;
         left: 100%;
@@ -258,7 +258,7 @@ main {
 
     .section-container {
         height: 52vh;
-        width: 100vw;
+        width: 100%;
         background-color: #FCEDDF;
         border-bottom: 0.2px solid #f2d3b6;
         padding-top: 35px;
@@ -629,7 +629,7 @@ main {
         // padding-top: 16vh;
         padding-top: 8vh;
         height: fit-content;
-        width: 100vw;
+        width: 100%;
         background-color: #FFF8F1;
 
         & .highlights {
@@ -723,7 +723,7 @@ main {
     }
 
     footer {
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
         // padding: 24px 0px;
         height: 50vh;
