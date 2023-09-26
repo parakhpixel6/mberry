@@ -1,0 +1,15 @@
+<svg width="42" height="34" viewBox="0 0 42 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="devicon:facebook">
+<ellipse id="Ellipse 13" cx="21" cy="30" rx="21" ry="4" fill="url(#paint0_radial_128_42)"/>
+<g id="Group 2155">
+<rect id="Rectangle 6243" x="6" width="30" height="30" rx="4" fill="#3D5A98"/>
+<path id="Vector" d="M26.62 30V19.335H30.465L31.04 14.87H26.62V12.02C26.62 10.7275 26.98 9.84501 28.8325 9.84501H31.1975V5.845C30.0523 5.72565 28.9014 5.6689 27.75 5.67501C24.345 5.67501 22 7.75001 22 11.5775V14.87H18.155V19.335H22V30H26.62Z" fill="white"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_128_42" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21 30) rotate(90) scale(4 21.916)">
+<stop stop-color="#111111"/>
+<stop offset="1" stop-color="#111111" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
