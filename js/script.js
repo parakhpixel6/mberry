@@ -1,4 +1,5 @@
-var swiper = new Swiper(".mySwiper", {
+//SWIPER
+const swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
     loop: true,
     navigation: {
@@ -8,6 +9,7 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
+//NAVBAR
 const hamburger = document.querySelector('.hamburger');
 const close_nav = document.querySelector('.close_nav');
 hamburger.addEventListener('click', function() {
@@ -17,6 +19,10 @@ close_nav.addEventListener('click', function() {
   document.querySelector('.menu-mob').style.left = '100%';
 })
 
+
+
+
+//NUTRITION
 const infoOverlays = document.querySelectorAll('.info-overlay');
 const nutriOverlays = document.querySelectorAll('.nutri-overlay');
 
@@ -42,3 +48,72 @@ infoOverlays.forEach((infoOverlay, index) => {
   }
 
 });
+
+
+// NEWS COMMENTS
+
+const hoffpost = document.getElementById('hoffpost');
+const atlantic = document.getElementById('atlantic');
+const smithsonian = document.getElementById('smithsonian');
+const atlasObscura = document.getElementById('atlasObscura');
+
+const hoffpostShow = document.querySelector('.hoffpost');
+const atlanticShow = document.querySelector('.atlantic');
+const smithsonianShow = document.querySelector('.smithsonian');
+const atlasObscuraShow = document.querySelector('.atlasObscura');
+
+
+hoffpost.addEventListener('mouseenter', function() {
+  hoffpostShow.style.display = 'block';
+  hoffpostShow.style.transition = 'display 0.3s ease-in-out';
+})
+hoffpostShow.addEventListener('mouseenter', function() {
+  hoffpostShow.style.display = 'block';
+})
+hoffpost.addEventListener('mouseleave', function() {
+  hoffpostShow.style.display = 'none';
+})
+hoffpostShow.addEventListener('mouseleave', function() {
+  hoffpostShow.style.display = 'none';
+})
+
+
+
+atlantic.addEventListener('mouseenter', function() {
+  atlanticShow.style.display = 'block';
+})
+atlanticShow.addEventListener('mouseenter', function() {
+  atlanticShow.style.display = 'block';
+})
+atlantic.addEventListener('mouseleave', function() {
+  atlanticShow.style.display = 'none';
+})
+atlanticShow.addEventListener('mouseleave', function() {
+  atlanticShow.style.display = 'none';
+})
+
+smithsonian.addEventListener('mouseenter', function() {
+  smithsonianShow.style.display = 'block';
+})
+smithsonianShow.addEventListener('mouseenter', function() {
+  smithsonianShow.style.display = 'block';
+})
+smithsonian.addEventListener('mouseleave', function() {
+  smithsonianShow.style.display = 'none';
+})
+smithsonianShow.addEventListener('mouseleave', function() {
+  smithsonianShow.style.display = 'none';
+})
+
+atlasObscura.addEventListener('mouseenter', function() {
+  atlasObscuraShow.style.display = 'block';
+})
+atlasObscuraShow.addEventListener('mouseenter', function() {
+  atlasObscuraShow.style.display = 'block';
+})
+atlasObscura.addEventListener('mouseleave', function() {
+  atlasObscuraShow.style.display = 'none';
+})
+atlasObscuraShow.addEventListener('mouseleave', function() {
+  atlasObscuraShow.style.display = 'none';
+})

@@ -5,7 +5,7 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html,
@@ -144,6 +144,10 @@ a {
     text-decoration: none;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 main {
     position: relative;
     min-height: 100vh;
@@ -159,7 +163,7 @@ main {
         background-color: #92919173;
         z-index: 99;
         left: 100%;
-        transition: left 0.5s ease-in-out;
+        transition: left 0.3s ease-in-out;
         
         & .nav-wrapper{
             position: relative;
@@ -351,6 +355,7 @@ main {
                         display: flex;
                         height: 100%;
                         width: 100%;
+                        margin-right: 2px;
 
                         & .product-detail {
                             width: 540px;
@@ -629,16 +634,80 @@ main {
 
         & .highlights {
             margin: 0 auto;
-            padding: 60px 24px;
+            padding: 60px 0px;
             /* height: 24vh;*/
             flex-wrap: wrap;
-            width: fit-content;
+            width: 72vw;
+            position: relative;
 
             & img {
+                cursor: pointer;
                 width: 216px;
                 height: 52px;
             }
+
+            & .highlight-hover {
+                width: 94vw;
+                height: 80%;
+                margin: 12px auto;
+                // padding: 24px;
+                position: absolute;
+                background-color: #FFF8F1;
+                // background-color: red;
+
+                & .highlight-wrapper {
+                    width: 80%;
+                    // background-color: red;
+                    margin: 0px auto;
+                    height: 100%;
+
+                    & h1 {
+                        font-family: Catamaran;
+                        font-size: 8rem;
+                        height: 48px;
+                        margin-top: 48px;
+                        color: #facca27c;
+                        
+                        &:first-child {
+                            margin-top: -48px;
+                            transform: scaleY(-1);
+                            rotate: 180deg;
+                        }
+                    }
+
+                    & .comment {
+                        width: 90%;
+
+                        img {
+                            margin-top: -24px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            font-family: Roboto;
+                            font-weight: 400;
+                            color: #222;
+
+                            & a {
+                                color: #EC3726;
+                            }
+
+                            & a:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .hoffpost, .atlantic, .smithsonian, .atlasObscura {
+                display: none;
+                transition: display 0.3s ease-in-out;
+                cursor: pointer;
+            }
         }
+
     }
 
     footer {
@@ -737,6 +806,7 @@ main {
                         }
 
                         & button {
+                            cursor: pointer;
                             color: #FBE3CD;
                             height: 35px;
                             width: 35px;
