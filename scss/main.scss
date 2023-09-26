@@ -5,7 +5,7 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 html,
@@ -646,7 +646,13 @@ main {
                 height: 52px;
             }
 
+            & span {
+                color: #c9c0bd;
+            }
+
+
             & .highlight-hover {
+                transition: all 0.3s ease-in-out;
                 width: 94vw;
                 height: 80%;
                 margin: 12px auto;
@@ -674,13 +680,19 @@ main {
                             rotate: 180deg;
                         }
                     }
-
+                    
                     & .comment {
                         width: 90%;
-
-                        img {
-                            margin-top: -24px;
+                        
+                        span {
+                            font-size: 32px;
+                            margin-left: auto;
+                            color: #C8A98D;
                         }
+
+                        // img {
+                        //     // margin-top: -24px;
+                        // }
 
                         p {
                             font-size: 18px;
@@ -704,7 +716,7 @@ main {
             .hoffpost, .atlantic, .smithsonian, .atlasObscura {
                 display: none;
                 transition: display 0.3s ease-in-out;
-                cursor: pointer;
+                cursor: default;
             }
         }
 

@@ -3,7 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html,
@@ -153,7 +153,7 @@ main header {
   padding: 0px 16px;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   border-top: 3px solid #C8A98D;
   z-index: 9;
   background-color: #FCEDDF;
@@ -705,7 +705,11 @@ main .section-highlight .highlights img {
   width: 216px;
   height: 52px;
 }
+main .section-highlight .highlights span {
+  color: #c9c0bd;
+}
 main .section-highlight .highlights .highlight-hover {
+  transition: all 0.3s ease-in-out;
   width: 94vw;
   height: 80%;
   margin: 12px auto;
@@ -732,8 +736,10 @@ main .section-highlight .highlights .highlight-hover .highlight-wrapper h1:first
 main .section-highlight .highlights .highlight-hover .highlight-wrapper .comment {
   width: 90%;
 }
-main .section-highlight .highlights .highlight-hover .highlight-wrapper .comment img {
-  margin-top: -24px;
+main .section-highlight .highlights .highlight-hover .highlight-wrapper .comment span {
+  font-size: 32px;
+  margin-left: auto;
+  color: #C8A98D;
 }
 main .section-highlight .highlights .highlight-hover .highlight-wrapper .comment p {
   font-size: 18px;
@@ -750,7 +756,7 @@ main .section-highlight .highlights .highlight-hover .highlight-wrapper .comment
 main .section-highlight .highlights .hoffpost, main .section-highlight .highlights .atlantic, main .section-highlight .highlights .smithsonian, main .section-highlight .highlights .atlasObscura {
   display: none;
   transition: display 0.3s ease-in-out;
-  cursor: pointer;
+  cursor: default;
 }
 main footer {
   width: 100vw;
@@ -1087,10 +1093,10 @@ main footer .footer-gradient .footer-leaf {
 }
 @media (min-width: 1101px) {
   .d-lg-none {
-    display: none;
+    display: none !important;
   }
 }
-@media (max-width: 1528px) {
+@media (max-width: 1628px) {
   .section-highlight {
     padding-top: 16vh !important;
   }

@@ -269,11 +269,11 @@
 
 @media (min-width: 1101px) {
     .d-lg-none {
-        display: none;
+        display: none !important;
     }
 }
 
-@media (max-width: 1528px) {
+@media (max-width: 1628px) {
     .section-highlight {
         padding-top: 16vh !important;
     }
