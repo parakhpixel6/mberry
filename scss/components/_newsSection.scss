@@ -1,0 +1,96 @@
+.section-highlight {
+    // padding-top: 16vh;
+    padding-top: 4vh;
+    height: fit-content;
+    width: 100%;
+    background-color: #FFF8F1;
+
+    & .highlights {
+        margin: 0 auto;
+        padding: 60px 0px;
+        /* height: 24vh;*/
+        flex-wrap: wrap;
+        width: 74vw;
+        position: relative;
+
+        & img {
+            cursor: pointer;
+            width: 216px;
+            height: 52px;
+        }
+
+        & span {
+            color: #c9c0bd;
+        }
+
+
+        & .highlight-hover {
+            transition: all 0.3s ease-in-out;
+            width: 94vw;
+            height: 80%;
+            margin: 12px auto;
+            // padding: 24px;
+            position: absolute;
+            background-color: #FFF8F1;
+            // background-color: red;
+
+            & .highlight-wrapper {
+                width: 80%;
+                // background-color: red;
+                margin: 0px auto;
+                height: 100%;
+
+                & h1 {
+                    font-family: Catamaran;
+                    font-size: 8rem;
+                    height: 48px;
+                    margin-top: 48px;
+                    color: #facca27c;
+                    
+                    &:first-child {
+                        margin-top: -48px;
+                        transform: scaleY(-1);
+                        rotate: 180deg;
+                    }
+                }
+                
+                & .comment {
+                    width: 90%;
+                    
+                    span {
+                        font-size: 32px;
+                        margin-left: auto;
+                        color: #C8A98D;
+                    }
+
+                    // img {
+                    //     // margin-top: -24px;
+                    // }
+
+                    p {
+                        font-size: 18px;
+                        font-family: Roboto;
+                        font-weight: 400;
+                        color: #222;
+
+                        & a {
+                            color: #EC3726;
+                        }
+
+                        & a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .hoffpost, .atlantic, .smithsonian, .atlasObscura {
+            display: none;
+            transition: all 0.3s ease-in-out;
+            cursor: default;
+        }
+    }
+
+}

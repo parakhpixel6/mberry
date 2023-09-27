@@ -378,6 +378,52 @@ main nav .nav-wrapper ul .active {
   background-color: #EC3726;
   color: #fff;
 }
+main .mycart {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.274);
+  position: fixed;
+  right: -100%;
+  z-index: 999;
+  transition: right 0.3s ease-in-out;
+}
+main .mycart-wrapper {
+  padding: 24px;
+  margin-left: auto;
+  width: 530px;
+  height: 100vh;
+  background-color: #fff;
+}
+main .mycart-wrapper h1 {
+  font-family: Roboto;
+  font-size: 24px;
+  color: #222;
+  font-weight: 500;
+}
+main .mycart-wrapper h1 span {
+  font-size: 30px;
+  font-weight: 300;
+  cursor: pointer;
+}
+main .mycart-wrapper table {
+  width: 100%;
+}
+main .mycart-wrapper table tr:first-child {
+  padding-bottom: 16px;
+  border-bottom: 1.25px solid #E13324;
+}
+main .mycart-wrapper table tr th:first-child {
+  width: 40%;
+  text-align: left;
+}
+main .mycart-wrapper table tr th {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
+  width: 20%;
+  text-align: right;
+}
 main .section-container {
   height: fit-content;
   width: 100%;
@@ -1091,6 +1137,9 @@ main footer .footer-gradient .footer-leaf {
   .highlight-wrapper h1:first-child {
     margin-top: -48px !important;
     margin-right: 8px;
+  }
+  .mycart-wrapper {
+    width: 100% !important;
   }
   footer .footer-links {
     width: 80vw !important;

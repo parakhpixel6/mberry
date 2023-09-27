@@ -1,0 +1,100 @@
+nav {
+
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #92919173;
+    z-index: 99;
+    left: 100%;
+    transition: left 0.3s ease-in-out;
+    
+    & .nav-wrapper{
+        position: relative;
+        width: 70vw;
+        background-color: #FCEDDF;
+        height: 100%;
+        padding-top: 24px;
+
+        & .close {
+            position: fixed;
+            width: 70vw;
+            background-color: #FCEDDF;
+
+            & span {
+                font-size: 62px;
+                font-weight: 300;
+                color: #C8A98D;
+            }
+        }
+
+        & ul {
+            text-align: center;
+            font-family: Oswald;
+            font-size: 14px;
+            padding-top: 94px;
+
+
+            & li {
+                text-align: left;
+                width: 150px;
+                display: block;
+                margin-bottom: 24px;
+            }
+
+            & li>ul {
+                padding: 0px;
+                display: none;
+                transition: display 0.3s ease-in-out;
+
+                &>li {
+                    text-align: left;
+                    padding: 4px 8px  !important;
+                    margin-bottom: 4px;
+                    font-size: 16px;
+
+                    & a {
+                        text-decoration: none;
+                        color: #111;
+                    }
+                }
+            }
+
+            & li:hover h1 {
+                background-color: #EC3726;
+                color: #fff;
+
+                & span {
+                    color: #fff;
+                }
+            }
+
+            & li:hover>ul {
+                display: block;
+                transition: display 0.3s ease-in-out;
+            }
+
+            & li span {
+                color: #C8A98D;
+                font-size: 36px;
+                height: 31px;
+                transform: rotate(0deg);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            & li:hover span {
+                transform: rotate(-180deg);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            & li h1 {
+                font-weight: 400;
+                padding-left: 8px;
+            }
+
+            & .active {
+                background-color: #EC3726;
+                color: #fff;
+            }
+        }
+    }
+}

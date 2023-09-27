@@ -21,6 +21,17 @@ close_nav.addEventListener('click', function() {
 
 
 
+//MYCART
+const myCart = document.querySelector('.myCart');
+const close_cart = document.querySelector('.close_cart');
+myCart.addEventListener('click', function() {
+  document.querySelector('.mycart').style.right = '0';
+})
+close_cart.addEventListener('click', function() {
+  document.querySelector('.mycart').style.right = '-100%';
+})
+
+
 
 //NUTRITION
 const infoOverlays = document.querySelectorAll('.info-overlay');
@@ -50,8 +61,23 @@ infoOverlays.forEach((infoOverlay, index) => {
 });
 
 
-// NEWS COMMENTS
+// Function to handle the event listeners
+function setupHoverEvents(target, show) {
+  target.addEventListener('mouseenter', function () {
+    show.style.display = 'block';
+  });
+  target.addEventListener('mouseenter', function () {
+    show.style.display = 'block';
+  });
+  target.addEventListener('mouseleave', function () {
+    show.style.display = 'none';
+  });
+  show.addEventListener('mouseleave', function () {
+    show.style.display = 'none';
+  });
+}
 
+// NEWS HOVER EFFECT
 const hoffpost = document.getElementById('hoffpost');
 const atlantic = document.getElementById('atlantic');
 const smithsonian = document.getElementById('smithsonian');
@@ -67,74 +93,28 @@ const atlanticClose = document.querySelector('.atlanticClose');
 const smithsonianClose = document.querySelector('.smithsonianClose');
 const atlasObscuraClose = document.querySelector('.atlasObscuraClose');
 
+// Setting up event listeners
+setupHoverEvents(hoffpost, hoffpostShow);
+setupHoverEvents(atlantic, atlanticShow);
+setupHoverEvents(smithsonian, smithsonianShow);
+setupHoverEvents(atlasObscura, atlasObscuraShow);
+setupHoverEvents(hoffpostShow, hoffpostShow);
+setupHoverEvents(atlanticShow, atlanticShow);
+setupHoverEvents(smithsonianShow, smithsonianShow);
+setupHoverEvents(atlasObscuraShow, atlasObscuraShow);
 
-hoffpost.addEventListener('mouseenter', function() {
-  hoffpostShow.style.display = 'block';
-  hoffpostShow.style.scale = 1;
-})
-hoffpostShow.addEventListener('mouseenter', function() {
-  hoffpostShow.style.scale = 1;
-  hoffpostShow.style.display = 'block';
-})
-hoffpost.addEventListener('mouseleave', function() {
+hoffpostClose.addEventListener('click', function () {
   hoffpostShow.style.display = 'none';
-})
-hoffpostShow.addEventListener('mouseleave', function() {
-  hoffpostShow.style.display = 'none';
-})
-hoffpostClose.addEventListener('click', function() {
-  hoffpostShow.style.display = 'none';
-})
+});
 
-
-
-atlantic.addEventListener('mouseenter', function() {
-  atlanticShow.style.display = 'block';
-})
-atlanticShow.addEventListener('mouseenter', function() {
-  atlanticShow.style.display = 'block';
-})
-atlantic.addEventListener('mouseleave', function() {
+atlanticClose.addEventListener('click', function () {
   atlanticShow.style.display = 'none';
-})
-atlanticShow.addEventListener('mouseleave', function() {
-  atlanticShow.style.display = 'none';
-})
-atlanticClose.addEventListener('click', function() {
-  atlanticShow.style.display = 'none';
-})
+});
 
-
-smithsonian.addEventListener('mouseenter', function() {
-  smithsonianShow.style.display = 'block';
-})
-smithsonianShow.addEventListener('mouseenter', function() {
-  smithsonianShow.style.display = 'block';
-})
-smithsonian.addEventListener('mouseleave', function() {
+smithsonianClose.addEventListener('click', function () {
   smithsonianShow.style.display = 'none';
-})
-smithsonianShow.addEventListener('mouseleave', function() {
-  smithsonianShow.style.display = 'none';
-})
-smithsonianClose.addEventListener('click', function() {
-  smithsonianShow.style.display = 'none';
-})
+});
 
-
-
-atlasObscura.addEventListener('mouseenter', function() {
-  atlasObscuraShow.style.display = 'block';
-})
-atlasObscuraShow.addEventListener('mouseenter', function() {
-  atlasObscuraShow.style.display = 'block';
-})
-atlasObscura.addEventListener('mouseleave', function() {
+atlasObscuraClose.addEventListener('click', function () {
   atlasObscuraShow.style.display = 'none';
-})
-atlasObscuraShow.addEventListener('mouseleave', function() {
-  atlasObscuraShow.style.display = 'none';
-})
-atlasObscuraClose.addEventListener('click', function() {
-  atlasObscuraShow.style.display = 'none';
-})
+});
