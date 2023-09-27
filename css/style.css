@@ -15,6 +15,10 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
 
 .d-flex {
   display: flex;
@@ -375,11 +379,11 @@ main nav .nav-wrapper ul .active {
   color: #fff;
 }
 main .section-container {
-  height: 52vh;
+  height: fit-content;
   width: 100%;
   background-color: #FCEDDF;
   border-bottom: 0.2px solid #f2d3b6;
-  padding-top: 35px;
+  padding-top: 94px;
 }
 main .section-container .carousel {
   padding: 24px;
@@ -389,7 +393,7 @@ main .section-container .carousel {
   background-color: #fff;
   border: 1px solid #dddddd;
   position: relative;
-  top: 24%;
+  top: 35px;
   border-radius: 10px;
   box-shadow: 0px 8px 8px 0px #ececec;
 }
@@ -687,7 +691,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
   font-size: 1.1rem;
 }
 main .section-highlight {
-  padding-top: 8vh;
+  padding-top: 4vh;
   height: fit-content;
   width: 100%;
   background-color: #FFF8F1;
@@ -697,7 +701,7 @@ main .section-highlight .highlights {
   padding: 60px 0px;
   /* height: 24vh;*/
   flex-wrap: wrap;
-  width: 72vw;
+  width: 74vw;
   position: relative;
 }
 main .section-highlight .highlights img {
@@ -755,7 +759,7 @@ main .section-highlight .highlights .highlight-hover .highlight-wrapper .comment
 }
 main .section-highlight .highlights .hoffpost, main .section-highlight .highlights .atlantic, main .section-highlight .highlights .smithsonian, main .section-highlight .highlights .atlasObscura {
   display: none;
-  transition: display 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   cursor: default;
 }
 main footer {
@@ -811,6 +815,14 @@ main footer .footer-wrapper .footer-promo .social {
   padding: 8px;
   width: 100%;
   height: 64%;
+}
+main footer .footer-wrapper .footer-promo .social a {
+  width: 56px;
+  height: 56px;
+}
+main footer .footer-wrapper .footer-promo .social a img {
+  height: 100%;
+  width: 100%;
 }
 main footer .footer-wrapper .footer-promo form {
   height: 60%;
@@ -1094,11 +1106,6 @@ main footer .footer-gradient .footer-leaf {
 @media (min-width: 1101px) {
   .d-lg-none {
     display: none !important;
-  }
-}
-@media (max-width: 1628px) {
-  .section-highlight {
-    padding-top: 16vh !important;
   }
 }
 

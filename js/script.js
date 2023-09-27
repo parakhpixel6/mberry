@@ -70,8 +70,10 @@ const atlasObscuraClose = document.querySelector('.atlasObscuraClose');
 
 hoffpost.addEventListener('mouseenter', function() {
   hoffpostShow.style.display = 'block';
+  hoffpostShow.style.scale = 1;
 })
 hoffpostShow.addEventListener('mouseenter', function() {
+  hoffpostShow.style.scale = 1;
   hoffpostShow.style.display = 'block';
 })
 hoffpost.addEventListener('mouseleave', function() {
