@@ -52,7 +52,7 @@
 
             & h1>a {
                 height: 100%;
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 500;
                 color: #e13324;  
             }
@@ -60,6 +60,8 @@
             & h1>span{
                 color: #C8A98D;
                 transform: rotate(0deg);
+                font-size: 24px;
+                margin-top: 2px;
                 transition: transform 0.3s ease-in-out;
             }
 
@@ -96,7 +98,7 @@
 
                     & a{
                         font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
+                        font-size: 13px;
                         font-weight: 300;
                         color: #fff;
 
@@ -154,7 +156,7 @@
             cursor: pointer;
 
             & h1 {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 400;
                 color: #72d172;
                 // color: #e13324;
@@ -166,11 +168,11 @@
 
             &:hover h1{
                 font-weight: 400;
-               color: #e13324;
+                color: #e13324;
             }
             
-            &>span {
-                font-size: 24px;
+            & h1>span {
+                font-size: 21px;
             }
         }
     }

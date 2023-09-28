@@ -1,0 +1,13 @@
+<svg width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 2608176">
+<ellipse id="Ellipse 13" cx="21" cy="40" rx="21" ry="4" fill="url(#paint0_radial_168_155)"/>
+<circle id="Ellipse 14" cx="21" cy="20" r="20" fill="#FCEDDF"/>
+<path id="Vector" d="M32 20.0276C32 13.9404 27.072 9 21 9C14.928 9 10 13.9404 10 20.0276C10 25.3649 13.784 29.809 18.8 30.8346V23.3358H16.6V20.0276H18.8V17.2707C18.8 15.1424 20.527 13.411 22.65 13.411H25.4V16.7193H23.2C22.595 16.7193 22.1 17.2155 22.1 17.8221V20.0276H25.4V23.3358H22.1V31C27.655 30.4486 32 25.7509 32 20.0276Z" fill="#972716"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_168_155" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21 40) rotate(90) scale(4 21.916)">
+<stop stop-color="#333333"/>
+<stop offset="1" stop-color="#333333" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
