@@ -8,7 +8,8 @@
     background-color: #FCEDDF;
     
     & .header-wrapper {
-        height: 12vh;
+        height: fit-content;
+        padding: 24px 0px;
         width: 1024px;
         margin: 0px auto;
         // padding-top: 54px;

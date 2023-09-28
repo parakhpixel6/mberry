@@ -163,7 +163,8 @@ main header {
   background-color: #FCEDDF;
 }
 main header .header-wrapper {
-  height: 12vh;
+  height: fit-content;
+  padding: 24px 0px;
   width: 1024px;
   margin: 0px auto;
 }
