@@ -39,9 +39,7 @@ const nutriOverlays = document.querySelectorAll('.nutri-overlay');
 
 infoOverlays.forEach((infoOverlay, index) => {
   infoOverlay.addEventListener('mouseleave', () => {
-    setTimeout(() => {
       nutriOverlays[index].style.opacity = 0; // Change back to 0 or your desired value
-    }, 3000);
   });
 
   nutriOverlays[index].addEventListener('mouseleave', () => {
@@ -64,16 +62,20 @@ infoOverlays.forEach((infoOverlay, index) => {
 // Function to handle the event listeners
 function setupHoverEvents(target, show) {
   target.addEventListener('mouseenter', function () {
-    show.style.display = 'block';
+    show.style.height = '80%';
+    show.querySelector('.highlight-wrapper').style.visibility = 'visible';
   });
   target.addEventListener('mouseenter', function () {
-    show.style.display = 'block';
+    show.style.height = '80%';
+    show.querySelector('.highlight-wrapper').style.visibility = 'visible';
   });
   target.addEventListener('mouseleave', function () {
-    show.style.display = 'none';
+    show.style.height = '0%';
+    show.querySelector('.highlight-wrapper').style.visibility = 'hidden';
   });
   show.addEventListener('mouseleave', function () {
-    show.style.display = 'none';
+    show.style.height = '0%';
+    show.querySelector('.highlight-wrapper').style.visibility = 'hidden';
   });
 }
 

@@ -2,11 +2,13 @@ footer {
     width: 100%;
     overflow: hidden;
     // padding: 24px 0px;
-    height: 50vh;
+    height: fit-content;
+    background-color: #b53724;
     background-image: url('../assets/bg.jpg');
-    background-position: center;
-    background-size: cover;
-    padding: 24px 0px;
+    // background-position: bottom;
+    background-position: 50% -110%;
+    background-size: percentage($number: -2);
+    padding: 24px 0px 0px 0px;
     position: relative;
 
 
@@ -30,11 +32,11 @@ footer {
         border-bottom: 1px solid #972716a6;
 
         & .footer-promo {
-            width: 310px;
-            height: 156px;
+            width: 276px;
+            height: 125px;
             border-radius: 8px;
             background-color: #972716;
-            padding: 16px;
+            padding: 12px;
 
             & h1, p {
                 font-family: Roboto;
@@ -42,12 +44,12 @@ footer {
             }
 
             & h1 {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 400;
             }
 
             & p {
-                font-size: 14px;
+                font-size: 12px;
                 font-weight: 300;
 
                 & a {
@@ -89,7 +91,7 @@ footer {
                 height: 64%;
 
                 & a {
-                    width: 52px;
+                    width: 40px;
                     height: 52px;
 
                     & img  {
@@ -107,12 +109,12 @@ footer {
             form {
                 height: 60%;
                 width: 100%;
-                margin: 0px auto;
+                margin: -4px auto;
 
                 & .input-wrapper {
                     width: 100%;
                     padding: 8px;
-                    height: 48px;
+                    height: 35px;
                     background-color: #D45435;
                     border-radius: 8px;
                     box-shadow: inset 0 0 0 2px #a82406;
@@ -130,19 +132,23 @@ footer {
 
                     & input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                         color: #FBE3CD;
-                        font-size: 16px;
+                        font-size: 12px;
                         font-family: Roboto;
                     }
 
                     & button {
                         cursor: pointer;
                         color: #FBE3CD;
-                        height: 35px;
-                        width: 35px;
+                        height: 25px;
+                        width: 25px;
                         padding: 8px;
                         border-radius: 6px;
                         background-color: #B32E1C;
                         border: none;
+
+                        & span {
+                            font-size: 14px;
+                        }
                     }
 
                     & button :focus {
@@ -156,22 +162,30 @@ footer {
 
     .footer-links {
         margin: 0px auto 0px auto;
-        max-width: 960px;
+        max-width: 880px;
         height: fit-content;
         // padding: 24px 0px 12px 0px;
         padding: 24px 0px;
+        margin-bottom: 12px;
 
         & .footer-link {
-            padding: 4px 12px;
+            position: relative;
+            overflow: hidden;
+            padding: 2px 12px;
+            background-color: #972716;
             text-align: center;
-            font-size: 16px;
+            font-size: 10px;
             margin-right: 0px;
             float: left;
+
+           
             
             & a {
                 color: #ffb7a3;
                 font-family: Roboto;
+                text-transform: uppercase;
                 text-decoration: none;
+                padding: 0px 8px;
                 transition: color 0.3s ease-in-out;
 
             }
@@ -181,23 +195,24 @@ footer {
             }
         }
 
-        & .phoneNumber {
-            background: none;
-            width: 100px !important;
-            position: relative;
-
-            & img {
-                position: absolute;
-                width: 102px;
-                height: 18px;
-                top: 46.5%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            & a {
-                z-index: 999;
-            }
+        & .footer-link::after {
+            content: " ";
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background-color: #A72C1A;
+            position: absolute;
+            right: -5px;
+        }
+        
+        & .footer-link::before {
+            content: " ";
+            height: 12px;
+            width: 12px;
+            border-radius: 50%;
+            background-color: #A72C1A;
+            position: absolute;
+            left: -5px;
         }
     }
 
@@ -213,7 +228,7 @@ footer {
         position: relative;
         margin: 0px auto;
         width: fit-content;
-        height: 100px;
+        height: fit-content;
         flex-shrink: 0;
         fill: linear-gradient(180deg, #62140A 0%, rgba(167, 44, 26, 0.00) 73%);
     
