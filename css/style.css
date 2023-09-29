@@ -813,7 +813,7 @@ main .section-highlight .highlights .highlight-hover .highlight-wrapper .comment
 main .section-highlight .highlights .hoffpost, main .section-highlight .highlights .atlantic, main .section-highlight .highlights .smithsonian, main .section-highlight .highlights .atlasObscura {
   height: 0;
   transition: all 0.3s ease;
-  cursor: default;
+  cursor: pointer;
 }
 main footer {
   width: 100%;
