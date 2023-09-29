@@ -744,7 +744,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
   font-size: 1.1rem;
 }
 main .section-highlight {
-  padding-top: 4vh;
+  padding-top: 5vh;
   height: fit-content;
   width: 100%;
   background-color: #FFF8F1;
@@ -786,7 +786,7 @@ main .section-highlight .highlights .highlight-hover .highlight-wrapper h1 {
   color: rgba(250, 204, 162, 0.4862745098);
 }
 main .section-highlight .highlights .highlight-hover .highlight-wrapper h1:first-child {
-  margin-top: -48px;
+  margin-top: -42px;
   transform: scaleY(-1);
   rotate: 180deg;
 }
