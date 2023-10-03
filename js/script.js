@@ -22,9 +22,9 @@ close_nav.addEventListener('click', function() {
 
 
 //MYCART
-const myCart = document.querySelector('.myCart');
+const my_cart = document.querySelector('.my-cart');
 const close_cart = document.querySelector('.close_cart');
-myCart.addEventListener('click', function() {
+my_cart.addEventListener('click', function() {
   document.querySelector('.mycart').style.right = '0';
 })
 close_cart.addEventListener('click', function() {
@@ -106,17 +106,21 @@ setupHoverEvents(smithsonianShow, smithsonianShow);
 setupHoverEvents(atlasObscuraShow, atlasObscuraShow);
 
 hoffpostClose.addEventListener('click', function () {
-  hoffpostShow.style.display = 'none';
+  hoffpostShow.style.height = '0%';
+  hoffpostShow.querySelector('.highlight-wrapper').style.visibility = 'hidden';
 });
 
 atlanticClose.addEventListener('click', function () {
-  atlanticShow.style.display = 'none';
+  atlanticShow.style.height = '0%';
+  atlanticShow.querySelector('.highlight-wrapper').style.visibility = 'hidden';
 });
 
 smithsonianClose.addEventListener('click', function () {
-  smithsonianShow.style.display = 'none';
+  smithsonianShow.style.height = '0%';
+  smithsonianShow.querySelector('.highlight-wrapper').style.visibility = 'hidden';
 });
 
 atlasObscuraClose.addEventListener('click', function () {
-  atlasObscuraShow.style.display = 'none';
+  atlasObscuraShow.style.height = '0%';
+  atlasObscuraShow.querySelector('.highlight-wrapper').style.visibility = 'hidden';
 });

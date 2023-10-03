@@ -99,8 +99,8 @@
 					<li class="d-lg-none hamburger d-flex justify-center align-center">
 						<span class="material-symbols-rounded">menu</span>
 					</li>
-					<li class="cart">
-						<h1 class="myCart d-flex g-4 justify-center align-center">
+					<li class="cart my-cart">
+						<h1 class="d-flex g-4 justify-center align-center">
 							<span class="material-symbols-rounded">
 								shopping_cart
 							</span>
@@ -163,25 +163,47 @@
 
 		<!--CART CONTAINER START-->
 		<div class="mycart">
-			<div class="mycart-wrapper d-flex g-24 flex-d-col">
-				<h1 class="d-flex justify-space-between align-center">
-					Shopping Cart
-					<span class="close_cart material-symbols-rounded">close</span>
-				</h1>
-				<table>
-					<tr class="d-flex align-center g-4">
-						<th>Item</th>
-						<th>Price</th>
-						<th>Qty</th>
-						<th>Total</th>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
+			<div class="mycart-wrapper d-flex flex-d-col justify-space-between align-center">
+				<div class="d-flex g-24 flex-d-col">
+					<h1 class="d-flex justify-space-between align-center">
+						Shopping Cart
+						<span class="close_cart material-symbols-rounded">close</span>
+					</h1>
+					<table>
+						<tr class="d-flex align-center g-4">
+							<th>Item</th>
+							<th>Price</th>
+							<th>Qty</th>
+							<th>Total</th>
+							<th></th>
+						</tr>
+						<tr class="d-flex justify-space-between align-center">
+							<td class="d-flex justify-center align-center flex-d-col-sm g-4-sm">
+								<img src="./assets/TwoPack_400x.webp" alt="mberry-tab">
+								<p>mberry Miracle Fruit Tablets (2 Pack)</p>
+							</td>
+							<td>$27.99</td>
+							<td>1</td>
+							<td class="d-flex justify-center align-center">$27.99</td>
+							<td><span class="cursor-pointer material-symbols-rounded">close</span></td>
+						</tr>
+						<tr class="d-flex justify-space-between align-center">
+							<td class="d-flex justify-center align-center flex-d-col-sm g-4-sm">
+								<img src="./assets/Untitleddesign_15_400x.webp" alt="mberry-tab">
+								<p>Miracle Berry Plant - Plant Only</p>
+							</td>
+							<td>$27.99</td>
+							<td>1</td>
+							<td class="d-flex justify-center align-center">$27.99</td>
+							<td><span class="cursor-pointer material-symbols-rounded">close</span></td>
+						</tr>
+					</table>
+					<h2>Total: &nbsp;&nbsp;&nbsp;&nbsp;$55.98</h2>
+				</div>
+				<div class="cart-btn d-flex justify-space-evenly align-center g-12">
+					<button type="submit" class="cursor-pointer">Keep Shoping</button>
+					<button type="submit" class="cursor-pointer">Proceed To Checkout</button>
+				</div>
 			</div>
 		</div>
 		<!--CART CONTAINER END-->
@@ -200,7 +222,7 @@
 									<h1>mberry. the new indulgence.</h1>
 									<h2>it makes life sweeter.</h2>
 								</div>
-								<div class=" product-content d-flex flex-d-col g-24 justify-flex-start">
+								<div class=" product-content d-flex flex-d-col g-24 justify-space-between">
 									<div class="d-lg-none product-img d-flex flex-d-col g-24 justify-flex-start">
 										<p>mberry<sup>TM</sup> elevates your taste experience, transforming lemons into
 											delicious sweet lemonade. mberry<sup>TM</sup> products are made from the

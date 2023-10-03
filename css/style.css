@@ -397,6 +397,7 @@ main .mycart {
 main .mycart-wrapper {
   padding: 24px;
   margin-left: auto;
+  position: relative;
   width: 530px;
   height: 100vh;
   background-color: #fff;
@@ -415,13 +416,18 @@ main .mycart-wrapper h1 span {
 main .mycart-wrapper table {
   width: 100%;
 }
+main .mycart-wrapper table tr {
+  border-bottom: 1.25px solid #E13324;
+}
 main .mycart-wrapper table tr:first-child {
   padding-bottom: 16px;
-  border-bottom: 1.25px solid #E13324;
 }
 main .mycart-wrapper table tr th:first-child {
   width: 40%;
   text-align: left;
+}
+main .mycart-wrapper table tr {
+  width: 100%;
 }
 main .mycart-wrapper table tr th {
   font-family: Roboto;
@@ -430,6 +436,65 @@ main .mycart-wrapper table tr th {
   color: #555;
   width: 20%;
   text-align: right;
+}
+main .mycart-wrapper table tr td {
+  padding: 16px 0px;
+  width: fit-content;
+  font-family: DM Sans, sans-serif;
+  color: #62636b;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+main .mycart-wrapper table tr td img {
+  width: 100px;
+}
+main .mycart-wrapper table tr td:first-child {
+  width: 31%;
+}
+main .mycart-wrapper h2 {
+  font-family: Roboto;
+  font-size: 20px;
+  color: #5f5f64;
+  font-weight: 400;
+  margin-left: auto;
+}
+main .mycart-wrapper .cart-btn {
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  padding: 32px 0px;
+  border-top: 1px solid #E13324;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+main .mycart-wrapper .cart-btn button {
+  height: 48px;
+  width: 216px;
+  padding: 8px 0px;
+  border-radius: 60px;
+  outline: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #E13324;
+}
+main .mycart-wrapper .cart-btn button:nth-child(1) {
+  background-color: #fff;
+  color: #E13324;
+}
+main .mycart-wrapper .cart-btn button:nth-child(1):hover {
+  background-color: #f4f4f4;
+}
+main .mycart-wrapper .cart-btn button:nth-child(2) {
+  background-color: #E13324;
+  color: #fff;
+}
+main .mycart-wrapper .cart-btn button:nth-child(2):hover {
+  background-color: rgba(214, 76, 64, 0.8274509804);
 }
 main .section-container {
   height: fit-content;
@@ -663,9 +728,9 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
   opacity: 0;
   position: absolute;
   left: 50%;
-  top: 41%;
+  top: 40%;
   transform: translate(-50%, -50%);
-  height: 80%;
+  height: fit-content;
   width: fit-content;
   border-radius: 8px;
   background-color: #fff;
@@ -675,7 +740,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-clip-path {
   position: absolute;
-  top: 100%;
+  top: 99%;
   left: 16%;
   transform: rotate(180deg);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -696,12 +761,12 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
   color: #555;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-left h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 40px;
   font-weight: 600;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-left h2 {
-  font-size: 1.27rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-left h3 {
@@ -717,7 +782,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
   color: #555;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-right th {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-right tr {
   padding: 4px 0px;
@@ -725,7 +790,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
   border-bottom: 2px solid #ddd;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-right tr td {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri-overlay .nutri-info .nutri-info-right tr span {
   font-weight: 600;
@@ -741,7 +806,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .nutri
   padding: 4px 16px;
   width: 25vw;
   font-family: Roboto;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 main .section-highlight {
   padding-top: 5vh;
@@ -1119,6 +1184,12 @@ main footer .footer-gradient .footer-leaf {
   }
 }
 @media (max-width: 530px) {
+  .flex-d-col-sm {
+    flex-direction: column;
+  }
+  .g-4-sm {
+    gap: 4px;
+  }
   .d-sm-none {
     display: none;
   }
@@ -1179,6 +1250,23 @@ main footer .footer-gradient .footer-leaf {
   }
   .mycart-wrapper {
     width: 100% !important;
+  }
+  .mycart-wrapper table tr td img {
+    width: 64px !important;
+  }
+  .mycart-wrapper table tr td p {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+  .mycart-wrapper tr td:first-child {
+    align-items: flex-start !important;
+    width: 30% !important;
+  }
+  .mycart-wrapper .cart-btn {
+    padding: 18px 0px !important;
+  }
+  .mycart-wrapper .cart-btn button {
+    width: 80% !important;
   }
   footer {
     background-position: center !important;
