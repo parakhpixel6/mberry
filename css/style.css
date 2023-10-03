@@ -271,8 +271,12 @@ main header .header-wrapper .menu ul .active h1 > a {
 main header .header-wrapper .menu ul .active h1 > span {
   color: #fff;
   font-weight: 400;
+}
+main header .header-wrapper .menu ul .active:hover h1 > span {
+  color: #fff;
+  font-weight: 400;
   transform: rotate(180deg);
-  transition: transform ease-in-out;
+  transition: all ease-in-out;
 }
 main header .header-wrapper .menu .hamburger {
   padding: 8px 10px;

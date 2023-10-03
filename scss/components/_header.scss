@@ -135,8 +135,13 @@
             & h1>span {
                 color: #fff;
                 font-weight: 400;
+            }
+
+            &:hover h1>span {
+                color: #fff;
+                font-weight: 400;
                 transform: rotate(180deg);
-                transition: transform ease-in-out;
+                transition: all ease-in-out;
             }
         }
 
