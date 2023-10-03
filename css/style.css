@@ -351,7 +351,7 @@ main nav .nav-wrapper ul li > ul > li {
   margin-bottom: 4px;
   font-size: 16px;
 }
-main nav .nav-wrapper ul li > ul > li a {
+main nav .nav-wrapper ul a {
   text-decoration: none;
   color: #111;
 }
@@ -879,6 +879,12 @@ main .section-highlight .highlights .hoffpost, main .section-highlight .highligh
   height: 0;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+main .section-product {
+  padding-top: 6vh;
+  height: fit-content;
+  width: 100%;
+  background-color: #FFF8F1;
 }
 main footer {
   width: 100%;

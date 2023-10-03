@@ -165,144 +165,19 @@ main {
 
     @import "./components/sideNavBar";
 
-    .mycart {
-        height: 100vh;
-        width: 100vw;
-        background-color: rgba(0, 0, 0, 0.274);
-        position: fixed;
-        right: -100%;
-        z-index: 999;
-        transition: right 0.3s ease-in-out;
-
-        &-wrapper {
-            padding: 24px;
-            margin-left: auto;
-            position: relative;
-            width: 530px;
-            height: 100vh;
-            background-color: #fff;
-
-            & h1 {
-                font-family: Roboto;
-                font-size: 24px;
-                color: #222;
-                font-weight: 500;
-
-                & span {
-                    font-size: 30px;
-                    font-weight: 300;
-                    cursor: pointer;
-                }
-            }
-
-            & table {
-                width: 100%;
-
-                & tr {
-                    border-bottom: 1.25px solid #E13324;
-                }
-
-                & tr:first-child {
-                    // padding: 0px 4px 16px 4px;
-                    padding-bottom: 16px;
-                    
-                }
-
-                & tr th:first-child {
-                    width: 40%;
-                    text-align: left;
-                }
-
-                & tr {
-                    width: 100%;
-                }
-
-                & tr th {
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-weight: 400;
-                    color: #555;
-                    width: 20%;
-                    // text-align: center;
-                    text-align: right;
-                }
-
-                & tr td {
-                    padding: 16px 0px;
-                    width: fit-content;
-                    font-family: DM Sans,sans-serif;
-                    color: #62636b;
-                    font-size: 16px;
-                    line-height: 24px;
-                    font-weight: 500;
-                }
-
-                & tr td img {
-                    width: 100px;
-                }
-
-                & tr td:first-child{
-                    width: 31%;
-                }
-            }
-
-            & h2 {
-                font-family: Roboto;
-                font-size: 20px;
-                color: #5f5f64;;
-                font-weight: 400;
-                margin-left: auto;
-            }
-
-            & .cart-btn {
-                flex-wrap: wrap;
-                width: 100%;
-                height: fit-content;
-                padding: 32px 0px;
-                border-top: 1px solid #E13324;
-                position: absolute;
-                z-index: 10;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-
-                & button {
-                    height: 48px;
-                    width: 216px;
-                    padding: 8px 0px;
-                    border-radius: 60px;
-                    outline: none;
-                    font-family: Roboto;
-                    font-size: 16px;
-                    font-weight: 500;
-                    border: 1px solid #E13324;
-                }
-
-                & button:nth-child(1){
-                    background-color: #fff;
-                    color: #E13324;
-                }
-
-                & button:nth-child(1):hover{
-                    background-color: #f4f4f4;
-                }
-
-                & button:nth-child(2){
-                    background-color: #E13324;
-                    color: #fff;
-                }
-
-                & button:nth-child(2):hover{
-                    background-color: #d64c40d3;
-                }
-            }
-        }
-
-    }
+    @import "./components/mycart";
 
     @import "./components/heroCarousal";
 
     @import "./components/newsSection";
+
+    .section-product {
+        // padding-top: 16vh;
+        padding-top: 6vh;
+        height: fit-content;
+        width: 100%;
+        background-color: #FFF8F1;
+    }
 
     @import  "./components/footer";
 }
