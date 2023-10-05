@@ -281,6 +281,38 @@
         }
     }
 
+    .newses, .matching {
+        width: 80vw !important;
+    }
+
+    .product-pair {
+        width: 100%;
+    }
+
+    .news-wrapper {
+        height: 292px !important;
+
+        & .news-logo {
+            width: 212px !important;
+            height: 192px !important;
+
+            & img {
+                height: 84% !important;
+            }
+        }
+
+        & .news {
+            height: 154px !important;
+            
+            p {
+                align-items: flex-start !important;
+                width: 250px !important;
+                border-top: none !important;
+                border-bottom: none !important;
+            }
+        }
+    }
+
     footer {
         background-position: center !important;
         .footer-links {
