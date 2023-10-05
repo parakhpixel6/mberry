@@ -210,6 +210,7 @@
                                 & img {
                                     height: 100%;
                                     z-index: 1;
+                                    filter: contrast(1.2) saturate(1);
                                 }
                             }
 

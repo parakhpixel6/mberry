@@ -177,30 +177,30 @@ main {
         width: 100%;
         background-color: #FFF8F1;
 
+        & h2 {
+            font-family: Open Sans;
+            font-weight: 700;
+            color: #c8a98d;
+            font-size: 16px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee0d3;
+        }
+
         & .product-container {
             flex-wrap: wrap;
             max-width: 960px;
             margin: 0px auto;
-            height: 50%;
+            height: fit-content;
             padding: 0px 0px 24px 0px;
 
-            & h2 {
-                font-family: Open Sans;
-                font-weight: 700;
-                color: #c8a98d;
-                font-size: 16px;
-                padding: 10px 0;
-                border-bottom: 1px solid #eee0d3;
-            }
-
             & .matching {
-                width: fit-content;
+                width: 432px;
                 height: fit-content;
                 border-bottom: 1px solid #fefdfc;
             }
 
             & .newes {
-                width: fit-content;
+                width: 500px;
                 height: fit-content;
                 border-bottom: 1px solid #fefdfc;
             }
@@ -218,7 +218,8 @@ main {
 
                     & img {
                         height: 90%;
-                        margin-left: -24px;
+                        margin-left: -42px;
+                        filter: contrast(1.2) saturate(1);
                     }
                 }
 
@@ -295,7 +296,7 @@ main {
                         background: transparent url(../assets/bg_popupright.png) 0 0 no-repeat;
 
                         & img {
-                            height: 95%;
+                            height: 86%;
                             width: 80%;
                             margin-left: -12px;          
                         }
@@ -325,6 +326,97 @@ main {
                     }
                 }
 
+            }
+
+        }
+
+        & .product-carousal {
+            max-width: 960px;
+            margin: 0px auto;
+            padding: 0px 0px 24px 0px;
+            
+            h2 {
+                margin-bottom: 10px;
+            }
+            
+            .event-img {
+                position: relative;
+                height: 100px;
+                width: 100%;
+                background-color: #F6ECE2;
+
+                & .navigation  {
+                    width: 1024px;
+                    height: 116px;
+                    position: relative;
+                    // top: -90%;
+                    top: 8%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    margin: 0px auto;
+        
+                    & .swiper-button-next {
+                        width: 40px;
+                        height: 100%;
+                        right: -6px;
+                        // border-right: 1px solid #dddddd;
+                        &::after{
+                            display: none;
+                        }
+        
+                        & span {
+                            color: #fff;
+                            padding: 18px;
+                            background: rgb(225,51,36);
+                            background: linear-gradient(142deg, rgba(225,51,36,1) 76%, rgba(203,0,0,1) 100%);
+                            left: -12px;
+                            font-size: 16px;
+                            position: absolute;
+                        }
+        
+                        & .clip-next {
+                            clip-path: polygon(18% 0%, 57% 0%, 18% 42%);
+                            top: 83px;
+                            transform: scaleX(-1);
+                            left: -28px;
+                            background: maroon;
+                        }
+                    }
+        
+                    & .swiper-button-prev {
+                        width: 40px;
+                        height: 100%;
+                        left: -6px;
+                        right: 0;
+                        &::after{
+                            display: none;
+                        }
+                        & span {
+                            color: #fff;
+                            padding: 18px;
+                            background: rgb(225,51,36);
+                            background: linear-gradient(142deg, rgba(225,51,36,1) 76%, rgba(203,0,0,1) 100%);
+                            right: -12px;
+                            font-size: 16px;
+                            position: absolute;
+                            transform-origin: center;
+                            transform: scaleX(-1);
+                            
+                        }
+        
+                        & .clip-prev {
+                            clip-path: polygon(18% 0%, 57% 0%, 18% 42%);
+                            top: 83px;
+                            transform: scaleX(1);
+                            left: 32px;
+                            background: maroon;
+                        }
+                    }
+    
+                    & .swiper-button-lock {
+                        display: flex;
+                    }
+                }
             }
 
         }

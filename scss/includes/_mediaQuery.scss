@@ -25,18 +25,26 @@
                 }
             }
 
-            & .navigation {
-                width: 86vw !important;
-                padding: 24px !important;
-                margin: 0px auto !important;
-
-                & .swiper-button-next>span,
-                .swiper-button-prev>span {
-                    padding: 12px !important;
-
-                }
-            }
+            
         }
+    }
+
+    .product-carousal {
+        width: 80vw !important;
+    }
+
+    .navigation {
+        width: 86vw !important;
+        padding: 24px !important;
+
+        & .swiper-button-next>span,
+        .swiper-button-prev>span {
+            padding: 12px !important;
+        }
+    }
+
+    .highlights {
+        width: 74vw !important;
     }
 
     .highlight-wrapper {

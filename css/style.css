@@ -366,6 +366,9 @@ main nav .nav-wrapper ul li:hover h1 {
 main nav .nav-wrapper ul li:hover h1 span {
   color: #fff;
 }
+main nav .nav-wrapper ul li:hover h1 a {
+  color: #fff;
+}
 main nav .nav-wrapper ul li:hover > ul {
   display: block;
   transition: display 0.3s ease-in-out;
@@ -685,6 +688,7 @@ main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .produ
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .product-img .product-rate .layer-1 img {
   height: 100%;
   z-index: 1;
+  filter: contrast(1.2) saturate(1);
 }
 main .section-container .carousel .mySwiper .swiper-wrapper .swiper-slide .product-img .product-rate .layer-2 {
   position: absolute;
@@ -823,7 +827,7 @@ main .section-highlight .highlights {
   padding: 60px 0px;
   /* height: 24vh;*/
   flex-wrap: wrap;
-  width: 74vw;
+  width: 960px;
   position: relative;
 }
 main .section-highlight .highlights img {
@@ -890,14 +894,7 @@ main .section-product {
   width: 100%;
   background-color: #FFF8F1;
 }
-main .section-product .product-container {
-  flex-wrap: wrap;
-  max-width: 960px;
-  margin: 0px auto;
-  height: 50%;
-  padding: 0px 0px 24px 0px;
-}
-main .section-product .product-container h2 {
+main .section-product h2 {
   font-family: Open Sans;
   font-weight: 700;
   color: #c8a98d;
@@ -905,13 +902,20 @@ main .section-product .product-container h2 {
   padding: 10px 0;
   border-bottom: 1px solid #eee0d3;
 }
+main .section-product .product-container {
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0px auto;
+  height: fit-content;
+  padding: 0px 0px 24px 0px;
+}
 main .section-product .product-container .matching {
-  width: fit-content;
+  width: 432px;
   height: fit-content;
   border-bottom: 1px solid #fefdfc;
 }
 main .section-product .product-container .newes {
-  width: fit-content;
+  width: 500px;
   height: fit-content;
   border-bottom: 1px solid #fefdfc;
 }
@@ -928,7 +932,8 @@ main .section-product .product-container .product-wrapper .product-img {
 }
 main .section-product .product-container .product-wrapper .product-img img {
   height: 90%;
-  margin-left: -24px;
+  margin-left: -42px;
+  filter: contrast(1.2) saturate(1);
 }
 main .section-product .product-container .product-wrapper .flavor {
   overflow-y: auto;
@@ -993,7 +998,7 @@ main .section-product .product-container .product-wrapper .news-logo {
   background: transparent url(../assets/bg_popupright.png) 0 0 no-repeat;
 }
 main .section-product .product-container .product-wrapper .news-logo img {
-  height: 95%;
+  height: 86%;
   width: 80%;
   margin-left: -12px;
 }
@@ -1015,6 +1020,83 @@ main .section-product .product-container .product-wrapper .news:first-child p {
 }
 main .section-product .product-container .product-wrapper .news:last-child p {
   border-bottom: none;
+}
+main .section-product .product-carousal {
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 0px 0px 24px 0px;
+}
+main .section-product .product-carousal h2 {
+  margin-bottom: 10px;
+}
+main .section-product .product-carousal .event-img {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #F6ECE2;
+}
+main .section-product .product-carousal .event-img .navigation {
+  width: 1024px;
+  height: 116px;
+  position: relative;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px auto;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-next {
+  width: 40px;
+  height: 100%;
+  right: -6px;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-next::after {
+  display: none;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-next span {
+  color: #fff;
+  padding: 18px;
+  background: rgb(225, 51, 36);
+  background: linear-gradient(142deg, rgb(225, 51, 36) 76%, rgb(203, 0, 0) 100%);
+  left: -12px;
+  font-size: 16px;
+  position: absolute;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-next .clip-next {
+  clip-path: polygon(18% 0%, 57% 0%, 18% 42%);
+  top: 83px;
+  transform: scaleX(-1);
+  left: -28px;
+  background: maroon;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-prev {
+  width: 40px;
+  height: 100%;
+  left: -6px;
+  right: 0;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-prev::after {
+  display: none;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-prev span {
+  color: #fff;
+  padding: 18px;
+  background: rgb(225, 51, 36);
+  background: linear-gradient(142deg, rgb(225, 51, 36) 76%, rgb(203, 0, 0) 100%);
+  right: -12px;
+  font-size: 16px;
+  position: absolute;
+  transform-origin: center;
+  transform: scaleX(-1);
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-prev .clip-prev {
+  clip-path: polygon(18% 0%, 57% 0%, 18% 42%);
+  top: 83px;
+  transform: scaleX(1);
+  left: 32px;
+  background: maroon;
+}
+main .section-product .product-carousal .event-img .navigation .swiper-button-lock {
+  display: flex;
 }
 main footer {
   width: 100%;
@@ -1227,14 +1309,19 @@ main footer .footer-gradient .footer-leaf {
     width: 60vw !important;
     height: fit-content !important;
   }
-  .section-container .carousel .navigation {
+  .product-carousal {
+    width: 80vw !important;
+  }
+  .navigation {
     width: 86vw !important;
     padding: 24px !important;
-    margin: 0px auto !important;
   }
-  .section-container .carousel .navigation .swiper-button-next > span,
-  .section-container .carousel .navigation .swiper-button-prev > span {
+  .navigation .swiper-button-next > span,
+  .navigation .swiper-button-prev > span {
     padding: 12px !important;
+  }
+  .highlights {
+    width: 74vw !important;
   }
   .highlight-wrapper h1 {
     margin-top: 112px !important;
